@@ -1,4 +1,190 @@
-
-.header-wrap{
-	
+/*********************头部导航样式 begin ：*********************/
+a{
+	text-decoration: none;
 }
+.header-wrap{
+	background-color: #fff;
+}
+.header-inner{
+	width: 1228px;
+	height: 90px;
+	margin:0 auto;
+	/*border:1px solid red;*/
+}
+div.logo-wrap{
+	float: left;
+	padding-top: 23px;
+}
+.logo-wrap>a{
+	margin-right: 8px;
+}
+.logo-wrap>span>img{
+	margin-bottom: 10px;
+}
+div.geo-location{
+	float: left;
+	position: relative;
+	top:31px;
+	width: 62px;
+	height: 28px;
+	margin-left: 16px;
+}
+a.cur-location{
+	position: relative;
+	display: inline-block;
+	width: 62px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 1.4rem;
+	text-align: center;
+	border:1px solid #e0e0e0;
+	border-radius: 2px;
+	z-index: 1;
+	background-color: #fff;
+}
+.cur-location.clickActive{
+	border-bottom:none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.cur-location:after{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	vertical-align: middle;
+	margin-left: 2px;
+	background: url(../../img/index/down-direction.png) no-repeat;
+}
+.cur-location.clickActive:after{
+	margin-bottom: 4px;
+	-webkit-transform: rotateZ(180deg);
+	-ms-transform: rotateZ(180deg);
+	-o-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+ul.city-list-wrap{
+	position: absolute;
+	top: 28px;
+	left: 0;
+	width: 334px;
+	padding:25px 20px 12px;
+	border:1px solid #e0e0e0;
+	border-radius: 2px;
+	z-index: 0;
+	background-color: #fff;
+}
+.city-list-show-hide{
+	display: none;
+}
+.city-list-wrap>li{
+	float: left;
+	margin-bottom:12px;
+	font-size: 1.2rem;
+	line-height: 2;
+	width: 78px;
+	text-align: center;
+}
+.city-list-wrap>li:nth-child(3n+2){
+	margin:0 30px;
+}
+.grayActive{
+	/*使图片变灰：*/
+	/*-webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    -ms-filter: grayscale(60%);
+    -o-filter: grayscale(60%);
+    filter: grayscale(60%);
+    filter: gray;*/
+    opacity: 0.6;
+}
+ul.action-list-wrap{
+	float: left;
+	margin-left: 52px;
+}
+.action-list-wrap>li{
+	float: left;
+	margin-right: 40px;
+}
+.action-list-wrap>li>a{
+	display: block;
+	height: 90px;
+	line-height: 90px;
+	font-size: 1.6rem;
+}
+.action-list-wrap>li>a>span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background:url(../../img/index/more-icon-bg.png) no-repeat;
+	background-position: 0px -480px;
+}
+.action-list-wrap>li>a:hover{
+	color: #33b574;
+}
+.action-list-wrap>li>a:hover .add-icon{
+	background-position: 0px -500px;
+}
+.action-list-wrap>li>a.clickActiveColor{
+	color: #33b574;
+}
+p.login-wrap{
+	float: right;
+	height: 90px;
+	line-height: 90px;
+}
+.login-wrap>a{
+	font-size: 1.4rem;
+}
+.login-wrap>a:hover{
+	color: #33b574;
+}
+.login-wrap>span{
+	font-size: 1.6rem;
+	vertical-align: middle;
+	margin:0 10px;
+	color: #ccc;
+}
+/*********************头部导航样式 end *********************/
+/******************中部内容区域的样式 begin ：******************/
+.content-wrap{
+	background-color: #f5f5f5;
+}
+.content-inner{
+	width: 1228px;
+	margin:0 auto;
+}
+.img-wrap{
+	position: relative;
+	width: 977px;
+	height: 346px;
+	overflow: hidden;
+}
+.img-wrap>a{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*opacity: 0.5;*/
+}
+.img-wrap>a:first-child{
+	display: block;
+}
+.select-bar{
+	position: absolute;
+	bottom: 16px;
+	right: 30px;
+}
+.select-bar>span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin-left: 12px;
+	background-color: #e3e7ea;
+	cursor: pointer;
+}
+.select-bar>span.selectActive{
+	background-color: #33b574;
+}
+/******************中部内容区域的样式 end ******************/
