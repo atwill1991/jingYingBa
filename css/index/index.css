@@ -6,11 +6,79 @@ a{
 	background-color: #fff;
 }
 .header-inner{
+	position: relative;
 	width: 1228px;
 	height: 90px;
 	margin:0 auto;
 	/*border:1px solid red;*/
 }
+/*<!-- 主页右侧的返回顶部的部分 begin ： -->*/
+.go-top-wrap{
+	position: absolute;
+	top: 300px;
+	right:-100px;
+}
+.wx-btn{
+	display: block;
+	width: 60px;
+	height: 80px;
+	box-sizing: border-box;
+	padding-top: 16px;
+	/*border:1px solid red;*/
+	font-size: 1.2rem;
+	color: #33b574;
+	text-align: center;
+	line-height: 2.6;
+	background-color: #fff;
+}
+.wx-btn:hover{
+	background-color: #f5f5f5;
+}
+.wx-btn:before{
+	content: '';
+	display: block;
+	width: 36px;
+	height: 30px;
+	margin:0 auto;
+	/*background-color: red;*/
+	background: url(../../img/index/icon_wx.png) no-repeat;
+	background-position: -17px 0;
+}
+.wx-btn:after{
+	content: '';
+	display: block;
+	display: none;
+	position: absolute;
+	top: -30px;
+	right: 80px;
+	width: 150px;
+	height: 150px;
+	background: url(../../img/index/code-2d.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 10;
+}
+.wx-btn:hover:after{
+	display: block;
+}
+.gotop-btn{
+	display: block;
+	position: relative;	
+	width: 60px;
+	height: 60px;
+	background-color: #33b574;
+}
+
+.gotop-btn:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 14px;
+	width: 32px;
+	height: 29px;
+	background: url(../../img/index/go_top.png) no-repeat;
+}
+/*<!-- 主页右侧的返回顶部的部分 end -->*/
 div.logo-wrap{
 	float: left;
 	padding-top: 23px;
@@ -71,7 +139,7 @@ ul.city-list-wrap{
 	padding:25px 20px 12px;
 	border:1px solid #e0e0e0;
 	border-radius: 2px;
-	z-index: 0;
+	z-index: 10;
 	background-color: #fff;
 }
 .city-list-show-hide{
@@ -149,12 +217,20 @@ p.login-wrap{
 /******************中部内容区域的样式 begin ：******************/
 .content-wrap{
 	background-color: #f5f5f5;
+	padding-bottom: 50px;
 }
 .content-inner{
 	width: 1228px;
 	margin:0 auto;
+	padding-top: 30px;
 }
-.img-wrap{
+/*****大图fade及登录、注册栏：*****/
+.img-login-wrap{
+	background-color: white;
+	margin-bottom: 20px;
+}
+li.img-wrap{
+	float: left;
 	position: relative;
 	width: 977px;
 	height: 346px;
@@ -165,7 +241,10 @@ p.login-wrap{
 	position: absolute;
 	top: 0;
 	left: 0;
-	/*opacity: 0.5;*/
+	/*opacity: 0.5;
+	-webkit-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+	transition: opacity 1s linear;*/
 }
 .img-wrap>a:first-child{
 	display: block;
@@ -187,4 +266,538 @@ p.login-wrap{
 .select-bar>span.selectActive{
 	background-color: #33b574;
 }
-/******************中部内容区域的样式 end ******************/
+li.login-wrap{
+	float: right;
+	width: 250px;
+	box-sizing: border-box;
+	padding:20px;
+	padding-bottom: 0;
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+ul.login-inner>li{
+	float: left;
+}
+ul.login-inner>li:first-child{
+	margin-right: 12px;
+}
+.user-header-icon{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: red;
+	background: url(../../img/index/user_header.png) no-repeat;
+	background-position: 0 0;
+}
+p.btn-wrap{
+	margin:12px 0;
+}
+p.btn-wrap>a{
+	color: #33b473;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	border-radius: 2px;
+}
+p.btn-wrap>.login-btn{
+	background-color: #33b574;
+	color: white;
+	margin-right: 10px;
+}
+.btn-wrap>a:hover{
+	background-color: #169853;
+	color: white;
+}
+a.login-btn,a.create-btn{
+	display: inline-block;
+	/*display: none;*/
+	width: 60px;
+	
+}
+p.btn-wrap>a.my-center{
+	display: inline-block;
+	display: none;
+	width: 80px;
+	height: 22px;
+	background-color: #33b574;
+	color: white;
+}
+ul.item-wrap{
+	border-top:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.item-wrap>li:first-child{
+	font-size: 1.4rem;
+	margin-bottom: 8px;
+}
+.item-wrap>li:first-child>a:last-child{
+	font-size: 1.2rem;
+	float: right;
+}
+.item-wrap>li:first-child>a:last-child:hover{
+	color:#33b574;
+}
+.item-wrap>li{
+
+}
+.item-wrap>li:first-child~li{
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-top: 16px;
+}
+.item-wrap>li:first-child~li>a{
+	display: block;
+	font-size: 1.2rem;
+	color:#808080;
+}
+.item-wrap>li:first-child~li>a:before{
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+	height: 32px;
+	/*border: 1px solid red;*/
+	background:url(../../img/index/icon_bg.png) no-repeat;
+	
+}
+#item-wrap>li:nth-child(2)>a:before{
+	background-position: 0px 1px;
+}
+#item-wrap>li:nth-child(3)>a:before{
+	background-position: 0px -38px;
+}
+#item-wrap>li:nth-child(4)>a:before{
+	background-position: 0px -74px;
+}
+#item-wrap>li:nth-child(5)>a:before{
+	background-position: 0px -110px;
+}
+#item-wrap>li:first-child~li>a:hover{
+	color:#33b574;
+}
+#item-wrap>li:nth-child(2)>a:hover:before{
+	background-position: 0px -148px;
+}
+#item-wrap>li:nth-child(3)>a:hover:before{
+	background-position: 0px -187px;
+}
+#item-wrap>li:nth-child(4)>a:hover:before{
+	background-position: 0px -223px;
+}
+#item-wrap>li:nth-child(5)>a:hover:before{
+	background-position: 0px -259px;
+}
+div.scholarship>a{
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 2.6;
+}
+.scholarship>a:hover{
+	color: #33b574;
+}
+
+/****<!-- 课程学习等功能菜单样式： -->****/
+ul.menu-wrap{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: white;
+}
+.menu-wrap>li{
+	width: 20%;
+	float: left;
+}
+.menu-wrap a>div{
+	float: left;
+}
+.menu-wrap a>div.left{
+	width: 58px;
+	height: 60px;
+	border:none;
+	outline: none;
+	background:url(../../img/index/menu_icon_bg.png) no-repeat;
+	padding-left: 20px;
+	border-left: 1px solid #e8e8e8;
+	margin-top:10px;
+}
+.menu-wrap>li:nth-child(1) div.left{
+	background-position: 20px 1px;
+	border-left: none;
+}
+.menu-wrap>li:nth-child(2) div.left{
+	background-position: 20px -67px;
+}
+.menu-wrap>li:nth-child(3) div.left{
+	background-position: 20px -135px;
+}
+.menu-wrap>li:nth-child(4) div.left{
+	background-position: 20px -203px;
+}
+.menu-wrap>li:nth-child(5) div.left{
+	background-position: 20px -271px;
+}
+.menu-wrap a>div.right{
+	float: left;
+	margin-left: 16px;
+	width: 136px;
+}
+.menu-wrap a>div.right>h4{
+	font-size: 1.4rem;
+	color: #666;
+}
+.menu-wrap a>div.right>p{
+	font-size: 1.2rem;
+	color:#999;
+}
+/******<!-- 精品吧在线课程： -->*****/
+h2.online-courses-title{
+	font-size: 2.4rem;
+	margin:40px 0 20px;
+	color: #333;
+}
+ul.on-line-courses{
+	background-color: #fff;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.on-line-courses>li{
+	position: relative;
+	float: left;
+	height: 144px;
+	margin-right: 16px;
+	opacity: 0.8;
+}
+.on-line-courses>li:first-child{
+	margin-left: 20px;
+}
+.on-line-courses>li.hasActive:hover{
+	opacity: 1;
+}
+.on-line-courses>li.expectActive:hover:after{
+	content: '正在录制，敬请期待!';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 144px;
+	line-height: 144px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	font-size: 1.4rem;
+	color: #fff;
+	cursor: default;
+}
+.on-line-courses>li.moreActive:hover>a{
+	cursor: default;
+}
+/****<!-- 线下课程： -->****/
+h2.public-h2{
+	font-size: 2.4rem;
+	margin:40px 0 20px;
+	color: #333;
+}
+h2.offline-title{
+	
+}
+a.off-line-courses{
+	position: relative;
+	display: block;
+	width: 1228px;
+	height: 186px;
+	background:url(../../img/index/offline_bg.png);
+	background-position: 0px -430px;
+	line-height: 186px;
+}
+a.maskGrayActive:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	z-index: 0;
+}
+a.maskGrayActive:hover:after{
+	background-color: rgba(0,0,0,0.1);
+}
+a.off-line-courses>span{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 182px;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	margin-top: -31px;
+	margin-left:-91px;
+	color: #fff;
+	font-size: 1.8rem;
+	background:url(../../img/index/offline_small_bg.png);
+	z-index: 1;
+}
+/****<!-- 入驻学校： -->****/
+a.enter-school{
+	position: relative;
+	display: block;
+	width: 1228px;
+	height: 186px;
+	background:url(../../img/index/school_bg.png);
+	background-position: 0px -430px;
+	line-height: 186px;
+}
+a.enter-school>span{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 182px;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	margin-top: -31px;
+	margin-left:-91px;
+	color: #fff;
+	font-size: 1.8rem;
+	background:url(../../img/index/school_small_bg.png);
+	z-index: 1;
+}
+/*<!-- 不一样的学习方式：你学习的不仅仅是技能: -->*/
+ul.learning-way-wrap{
+	background-color: #fff;
+	height: 355px;
+	box-sizing: border-box;
+	padding-top: 40px;
+}
+.learning-way-wrap>li{
+	width: 25%;
+	float: left;
+}
+.learning-way-wrap>li>a{
+	cursor: default;
+}
+.learning-way-wrap>li>a>img{
+	display: block;
+	margin:0 auto;
+	width: 166px;
+	height: 166px;
+	border-radius: 100%;
+}
+.learning-way-wrap>li>a>h3{
+	text-align: center;
+	font-size: 1.6rem;
+	color: #333;
+	margin:30px 0 12px;
+}
+.learning-way-wrap>li>a>p{
+	width: 240px;
+	margin:0 auto;
+	font-size: 1.2rem;
+	color: #999;
+}
+/***<!-- 目前我们共有超过20000注册学习用户目前已经有超过10000名学生就业 :-->***/
+h2.create-user-title>span{
+	color: #737373;
+	font-size: 2.2rem;
+}
+h2.create-user-title>em{
+	color: #ec9767;
+}
+ul.student-list{
+	background-color: #fff;
+	padding-top: 40px;
+	padding-bottom: 38px;
+}
+.student-list>li{
+	float: left;
+	width: 200px;
+	height: 326px;
+	
+	/*background-color: cyan;*/
+	background:url(../../img/index/learninguser_bg.png);
+}
+.student-list>li:first-child{
+	margin-left: 18px;
+}
+.student-list>li:first-child~li{
+	margin-left: 48px;
+}
+.student-list>li>a>img{
+	display: block;
+	margin:0 auto;
+}
+ul.each-info-list{
+	margin-top:32px;
+}
+.each-info-list>li{
+	text-align: center;
+	color: #333;
+	font-size: 1.4rem;
+}
+.each-info-list>li:nth-child(4){
+	margin-top:30px;
+}
+.each-info-list>li:nth-child(5){
+	font-size: 2.4rem;
+}
+/***<!-- 合作机构: -->***/
+.logo-icon-wrap{
+	position: relative;
+	background-color: #fff;
+	width: 1228px;
+	height: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.logo-icon-container{
+	position: relative;
+	width: 1190px;
+	height: 50px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.logo-icon-inner{
+	width: 5000px;
+	/*border:1px solid red;*/
+	height: 50px;
+	-webkit-user-select:none;
+}
+.logo-icon-inner>li{
+	float: left;
+	margin:0 10px;
+	width: 150px;
+	height: 50px;
+	
+}
+.logo-icon-inner>li>a{
+	display: block;
+	width: 150px;
+	height: 50px;
+	box-sizing: border-box;
+	border:1px solid #e8e8e8;
+}
+.logo-icon-inner>li>a>img{
+	display: block;
+	margin:0 auto;
+	max-height: 48px;
+}
+.left-controler{
+	position: absolute;
+	left: 10px;
+	top: 68px;
+	width: 8px;
+	height: 15px;
+	background:url(../../img/index/controler_left.png) no-repeat;
+	cursor: pointer;
+	-webkit-user-select:none;
+}
+.right-controler{
+	position: absolute;
+	right: 10px;
+	top: 68px;
+	width: 8px;
+	height: 15px;
+	background:url(../../img/index/controler_right.png) no-repeat;
+	cursor: pointer;
+	-webkit-user-select:none;
+}
+/**********************中部内容区域的样式 end **********************/
+/********************底部的footer部分 begin ：**************************/
+.footer-wrap{
+	width: 100%;
+	background-color: #fff;
+}
+footer{
+	width: 1228px;
+	margin:0 auto;
+}
+ul.link-wrap{
+	height: 60px;
+	border-bottom: 1px solid #e8e8e8; 
+}
+.link-wrap>li{
+	line-height: 60px;
+}
+li.link-title{
+	float: left;
+	font-size: 2.2rem;
+	color: #333;
+	margin-right: 30px;
+}
+li.friend-link>a{
+	float: left;
+	font-size: 1.4rem;
+	color: #676767;
+	margin-right: 40px;
+}
+li.friend-link>a:hover{
+	color: #333;
+}
+li.more-link>a{
+	float: right;
+}
+/*底部部分：*/
+.footer-bottom{
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e8e8e8; 
+}
+.footer-bottom>ul{
+	float: left;
+	min-width: 170px;
+}
+.footer-bottom>ul.app-download{
+	float: right;
+}
+.footer-bottom>ul>li:first-child{
+	font-size: 1.4rem;
+	color: #333;
+	margin-bottom: 20px;
+}
+.footer-bottom>ul>li:first-child~li>a{
+	font-size: 1.2rem;
+	color: #676767;
+}
+.footer-bottom>ul>li:first-child~li>a:hover{
+	color: #333;
+}
+.contact-way>li>img{
+	width: 76px;
+	margin-left: -6px;
+}
+.app-download>li>img{
+	width: 116px;
+}
+.app-download>li{
+	text-align: center;
+}
+/*******************最底部的信息：*******************/
+address{
+	padding-top:18px;
+	padding-bottom: 38px;
+	text-align: center;
+	
+}
+address>a{
+	color: #808083;
+}
+address>a:first-child{
+	padding-right: 6px;
+	border-right: 1px solid #b3b3b3;
+	cursor: text;
+}
+address>a:last-child:last-child{
+	padding-left: 6px;
+}
+address>a:last-child:hover{
+	color: #29b583;
+}
