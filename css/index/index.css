@@ -12,73 +12,6 @@ a{
 	margin:0 auto;
 	/*border:1px solid red;*/
 }
-/*<!-- 主页右侧的返回顶部的部分 begin ： -->*/
-.go-top-wrap{
-	position: absolute;
-	top: 300px;
-	right:-100px;
-}
-.wx-btn{
-	display: block;
-	width: 60px;
-	height: 80px;
-	box-sizing: border-box;
-	padding-top: 16px;
-	/*border:1px solid red;*/
-	font-size: 1.2rem;
-	color: #33b574;
-	text-align: center;
-	line-height: 2.6;
-	background-color: #fff;
-}
-.wx-btn:hover{
-	background-color: #f5f5f5;
-}
-.wx-btn:before{
-	content: '';
-	display: block;
-	width: 36px;
-	height: 30px;
-	margin:0 auto;
-	/*background-color: red;*/
-	background: url(../../img/index/icon_wx.png) no-repeat;
-	background-position: -17px 0;
-}
-.wx-btn:after{
-	content: '';
-	display: block;
-	display: none;
-	position: absolute;
-	top: -30px;
-	right: 80px;
-	width: 150px;
-	height: 150px;
-	background: url(../../img/index/code-2d.png) no-repeat;
-	background-size: 100% 100%;
-	z-index: 10;
-}
-.wx-btn:hover:after{
-	display: block;
-}
-.gotop-btn{
-	display: block;
-	position: relative;	
-	width: 60px;
-	height: 60px;
-	background-color: #33b574;
-}
-
-.gotop-btn:before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 16px;
-	left: 14px;
-	width: 32px;
-	height: 29px;
-	background: url(../../img/index/go_top.png) no-repeat;
-}
-/*<!-- 主页右侧的返回顶部的部分 end -->*/
 div.logo-wrap{
 	float: left;
 	padding-top: 23px;
@@ -780,7 +713,7 @@ li.more-link>a{
 .app-download>li{
 	text-align: center;
 }
-/*******************最底部的信息：*******************/
+/*******************最底部的信息 begin ：*******************/
 address{
 	padding-top:18px;
 	padding-bottom: 38px;
@@ -801,3 +734,72 @@ address>a:last-child:last-child{
 address>a:last-child:hover{
 	color: #29b583;
 }
+/*******************最底部的信息 end *******************/
+/**************<!-- 主页右侧的返回顶部的部分 begin ： -->***************/
+.go-top-wrap{
+	position: fixed;
+	left: 1228px;
+	bottom: 20px;
+	/*z-index: 10;*/
+}
+.wx-btn{
+	display: block;
+	width: 60px;
+	height: 80px;
+	box-sizing: border-box;
+	padding-top: 16px;
+	/*border:1px solid red;*/
+	font-size: 1.2rem;
+	color: #33b574;
+	text-align: center;
+	line-height: 2.6;
+	background-color: #fff;
+}
+.wx-btn:hover{
+	background-color: #f5f5f5;
+}
+.wx-btn:before{
+	content: '';
+	display: block;
+	width: 36px;
+	height: 30px;
+	margin:0 auto;
+	/*background-color: red;*/
+	background: url(../../img/index/icon_wx.png) no-repeat;
+	background-position: -17px 0;
+}
+.wx-btn:after{
+	content: '';
+	display: block;
+	display: none;
+	position: absolute;
+	top: -30px;
+	right: 80px;
+	width: 150px;
+	height: 150px;
+	background: url(../../img/index/code-2d.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 10;
+}
+.wx-btn:hover:after{
+	display: block;
+}
+.gotop-btn{
+	display: block;
+	position: relative;	
+	width: 60px;
+	height: 60px;
+	background-color: #33b574;
+}
+
+.gotop-btn:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 14px;
+	width: 32px;
+	height: 29px;
+	background: url(../../img/index/go_top.png) no-repeat;
+}
+/********************<!-- 主页右侧的返回顶部的部分 end -->********************/
