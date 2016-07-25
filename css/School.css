@@ -1,0 +1,262 @@
+.mainContent {
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.courseClass {
+  width: 1228px;
+  background-color: #FFF;
+  margin: 28px auto;
+  padding: 12px 0;
+}
+.courseClass p {
+  height: 38px;
+  line-height: 38px;
+}
+.courseClass p em {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 20px;
+  margin-right: 14px;
+  background: url(../img/public/font-icon.png) no-repeat;
+  vertical-align: middle;
+}
+.courseClass p:nth-child(2) em {
+  height: 18px;
+  background-position: -1px -16px;
+}
+.courseClass p a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: black;
+  margin-right: 50px;
+}
+.courseClass p .all {
+  color: #29b572;
+}
+.courseClass p a:hover {
+  color: #29b572;
+}
+.courseClass p span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  font-size: 14px;
+}
+.school_list {
+  width: 1228px;
+  margin-bottom: 28px;
+  margin: 0 auto;
+}
+.school_list .left {
+  position: relative;
+  width: 915px;
+  background-color: #FFF;
+  float: left;
+  display: inline;
+}
+.school_list .left .feture li {
+  float: left;
+  display: inline;
+  width: 110px;
+  height: 54px;
+}
+.school_list .left .feture li a {
+  display: block;
+  text-align: center;
+  height: 100%;
+  line-height: 54px;
+  font-size: 14px;
+  color: #333333;
+}
+.school_list .left .feture li .active {
+  color: #29b572;
+}
+.school_list .left .feture li:hover a {
+  color: #29b572;
+}
+.school_list .left .school_details {
+  padding: 5px;
+  box-sizing: border-box;
+}
+.school_list .left .school_details li {
+  margin-bottom: 5px;
+}
+.school_list .left .school_details li:hover {
+  box-shadow: 0 0 2px #808080;
+  -webkit-box-shadow: 0 0 2px #808080;
+  -moz-box-shadow: 0 0 2px #808080;
+  -ms-box-shadow: 0 0 2px #808080;
+  -o-box-shadow: 0 0 2px #808080;
+}
+.school_list .left .school_details li:hover a dl dt {
+  color: #29b572;
+}
+.school_list .left .school_details li > a {
+  display: block;
+  height: 120px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 15px;
+}
+.school_list .left .school_details li > a img {
+  display: inline;
+  float: left;
+  width: 164px;
+  height: 90px;
+  margin-right: 15px;
+}
+.school_list .left .school_details li > a dl {
+  float: left;
+  display: inline;
+}
+.school_list .left .school_details li > a dl dt {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 4.5px;
+}
+.school_list .left .school_details li > a dl dt span {
+  font-size: 15px;
+  color: #666666;
+}
+.school_list .left .school_details li > a dl dd label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: 0 -26px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.school_list .left .school_details li > a dl dd .star {
+  background-position: -14px -26px;
+}
+.school_list .left .school_details li > a dl dd span {
+  font-size: 12px;
+  color: #666666;
+  margin-left: 8px;
+}
+.school_list .left .school_details li > a dl dd span em {
+  color: #29b572;
+}
+.school_list .left .school_details li > a dl dd:nth-of-type(2) {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 18px;
+}
+.school_list .left .school_details li > a dl dd:nth-of-type(2):before {
+  display: inline-block;
+  content: "";
+  margin-right: 2px;
+  width: 16px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: 0 -47px;
+}
+.school_list .right {
+  display: inline;
+  background-color: #FFF;
+  float: right;
+  width: 295px;
+  overflow: hidden;
+}
+.school_list .right .title {
+  margin-top: 22px;
+  height: 28px;
+  line-height: 28px;
+}
+.school_list .right .title span {
+  float: left;
+  display: inline;
+  color: #333333;
+  font-size: 16px;
+}
+.school_list .right .title span:before {
+  display: inline;
+  content: "";
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: 4px;
+  margin-left: 15px;
+  margin-right: 4px;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: 0 0;
+}
+.school_list .right .title a {
+  float: right;
+  display: inline;
+  margin-right: 15px;
+  color: #666666;
+}
+.school_list .right ul {
+  padding: 5px 5px 22px 5px;
+}
+.school_list .right ul li {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.school_list .right ul li a {
+  display: block;
+}
+.school_list .right ul li a img {
+  float: left;
+  display: inline;
+  width: 110px;
+  height: 60px;
+  margin-right: 8px;
+}
+.school_list .right ul li a dl {
+  float: left;
+  display: inline;
+  width: 146px;
+}
+.school_list .right ul li a dl dt {
+  font-size: 14px;
+  color: #333;
+}
+.school_list .right ul li a dl dd {
+  color: #999999;
+}
+.school_list .right ul li a dl dt,
+.school_list .right ul li a dl dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.school_list .right ul li a dl dd:last-child {
+  font-size: 16px;
+  color: #ea9b65;
+}
+.school_list .right ul li a dl dd:last-child em {
+  font-size: 12px;
+}
+.school_list .right ul li:hover {
+  -webkit-box-shadow: 0 0 1px #808080;
+  -moz-box-shadow: 0 0 1px #808080;
+  box-shadow: 0 0 1px #808080;
+  -ms-shadow: 0 0 1px #808080;
+  -o-shadow: 0 0 1px #808080;
+}
+.school_list .right ul li:hover dt {
+  color: #29b572;
+}
+.pagination {
+  text-align: center;
+  margin-bottom: 38px;
+  margin-top: 45px;
+}
+.pagination a {
+  display: inline-block;
+  color: #666666;
+  padding: 6px 12px;
+  border: 1px solid #CCC;
+}
+.pagination .active {
+  color: #FFF;
+  background-color: #29b572;
+  border-color: #29b572;
+}
+/*# sourceMappingURL=School.css.map */

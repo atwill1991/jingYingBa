@@ -1,0 +1,427 @@
+.mainContent {
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.courseClass {
+  width: 1228px;
+  background-color: #FFF;
+  margin: 28px auto;
+  padding: 12px 0;
+}
+.courseClass p {
+  height: 38px;
+  line-height: 38px;
+}
+.courseClass p em {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 20px;
+  margin-right: 14px;
+  background: url(../img/public/font-icon.png) no-repeat;
+  vertical-align: middle;
+}
+.courseClass p:nth-child(2) em {
+  height: 18px;
+  background-position: -1px -16px;
+}
+.courseClass p a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: black;
+  margin-right: 50px;
+}
+.courseClass p .active {
+  color: #29b572;
+}
+.courseClass p a:hover {
+  color: #29b572;
+}
+.courseClass p span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  font-size: 14px;
+}
+.courese_list {
+  width: 1228px;
+  background-color: #FFF;
+  margin: 0 auto 28px;
+  overflow: hidden;
+}
+.list_tab {
+  position: relative;
+  height: 54px;
+}
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 110px;
+  background-color: #29b572;
+}
+.list_tab ul {
+  float: left;
+  display: inline;
+  width: 550px;
+  height: 100%;
+}
+.list_tab ul li {
+  width: 110px;
+  height: 100%;
+  float: left;
+  display: inline;
+}
+.list_tab ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 54px;
+  color: #666666;
+  text-align: center;
+  font-size: 14px;
+}
+.list_tab ul .active {
+  color: #29b572;
+}
+.list_tab ul li a:hover {
+  color: #29b572;
+}
+.list_tab ul .feature a:after,
+.school_list .left .feture li:nth-of-type(2) a:after {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 8px;
+  vertical-align: middle;
+  background: url(../img/public/font-icon.png) no-repeat;
+  background-position: 0 -50px;
+  margin-left: 5px;
+}
+.list_tab ul .feature:nth-of-type(3) a:after {
+  background: url(../img/public/font-icon.png) no-repeat;
+  background-position: 0 -61px;
+}
+.list_tab ul .feature:nth-of-type(3) .active:after,
+.list_tab ul .feature:nth-of-type(3):hover a:after {
+  background: url(../img/public/font-icon.png) no-repeat;
+  background-position: 0 -72px;
+}
+.list_tab ul .feature .active:after,
+.list_tab ul .feature:hover a:after,
+.school_list .left .feture li:nth-of-type(2):hover a:after,
+.school_list .left .feture li:nth-of-type(2) .active:after {
+  display: inline-block;
+  content: "";
+  background: url(../img/public/font-icon.png) no-repeat;
+  background-position: 0 -38px;
+}
+.list_tab span {
+  float: right;
+  display: inline;
+  margin-top: 26px;
+  margin-right: 30px;
+  font-size: 14px;
+  color: #666666;
+}
+.course_detail {
+  margin-top: 26px;
+}
+.course_detail li {
+  float: left;
+  display: inline;
+  margin-left: 26px;
+  margin-bottom: 10px;
+  width: 260px;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.course_detail li a {
+  display: block;
+  position: relative;
+}
+.course_detail li a i {
+  position: absolute;
+  width: 35px;
+  height: 17px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  right: 5px;
+  top: 128px;
+  color: #FFF;
+}
+.course_detail li:hover {
+  -webkit-box-shadow: 0 0 10px #DDD;
+  -moz-box-shadow: 0 0 10px #DDD;
+  box-shadow: 0 0 10px #DDD;
+  -ms-box-shadow: 0 0 10px #DDD;
+  -o-box-shadow: 0 0 10px #DDD;
+}
+.course_detail li img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+.course_detail li dl {
+  margin-top: 12px;
+}
+.course_detail li dl dt {
+  font-size: 15px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 240px;
+}
+.course_detail li dl dd {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #808080;
+}
+.course_detail li dl dd:nth-of-type(2) {
+  margin-top: 7.5px;
+}
+.course_detail li dl dd:nth-of-type(2) em,
+.course_detail li dl dd:nth-of-type(2) s {
+  float: left;
+  display: inline;
+}
+.course_detail li dl dd:nth-of-type(2) em {
+  font-size: 22px;
+  color: #ea9b65;
+}
+.course_detail li dl dd:nth-of-type(2) s {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.course_detail li dl dd:nth-of-type(2) span {
+  float: right;
+  display: inline;
+  margin-top: 10px;
+}
+.pagination {
+  text-align: center;
+  margin-bottom: 38px;
+  margin-top: 45px;
+}
+.pagination a {
+  display: inline-block;
+  color: #666666;
+  padding: 6px 12px;
+  border: 1px solid #CCC;
+}
+.pagination .active {
+  color: #FFF;
+  background-color: #29b572;
+  border-color: #29b572;
+}
+.pagination .pages,.pagination .next{
+	margin-left: 2px;
+}
+.school_list {
+  width: 1228px;
+  margin-bottom: 28px;
+  margin: 0 auto;
+}
+.school_list .left {
+  position: relative;
+  width: 915px;
+  background-color: #FFF;
+  float: left;
+  display: inline;
+}
+.school_list .left .feture li {
+  float: left;
+  display: inline;
+  width: 110px;
+  height: 54px;
+}
+.school_list .left .feture li a {
+  display: block;
+  text-align: center;
+  height: 100%;
+  line-height: 54px;
+  font-size: 14px;
+  color: #333333;
+}
+.school_list .left .feture li .active {
+  color: #29b572;
+}
+.school_list .left .feture li:hover a {
+  color: #29b572;
+}
+.school_list .left .school_details {
+  padding: 5px;
+  box-sizing: border-box;
+}
+.school_list .left .school_details li {
+  margin-bottom: 5px;
+}
+.school_list .left .school_details li:hover {
+  box-shadow: 0 0 2px #808080;
+  -webkit-box-shadow: 0 0 2px #808080;
+  -moz-box-shadow: 0 0 2px #808080;
+  -ms-box-shadow: 0 0 2px #808080;
+  -o-box-shadow: 0 0 2px #808080;
+}
+.school_list .left .school_details li:hover a dl dt {
+  color: #29b572;
+}
+.school_list .left .school_details li > a {
+  display: block;
+  height: 120px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 15px;
+}
+.school_list .left .school_details li > a img {
+  display: inline;
+  float: left;
+  width: 164px;
+  height: 90px;
+  margin-right: 15px;
+}
+.school_list .left .school_details li > a dl {
+  float: left;
+  display: inline;
+}
+.school_list .left .school_details li > a dl dt {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 4.5px;
+}
+.school_list .left .school_details li > a dl dt span {
+  font-size: 15px;
+  color: #666666;
+}
+.school_list .left .school_details li > a dl dd label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: 0 -26px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.school_list .left .school_details li > a dl dd .star {
+  background-position: -14px -26px;
+}
+.school_list .left .school_details li > a dl dd span {
+  font-size: 12px;
+  color: #666666;
+  margin-left: 8px;
+}
+.school_list .left .school_details li > a dl dd span em {
+  color: #29b572;
+}
+.school_list .left .school_details li > a dl dd:nth-of-type(2) {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 18px;
+}
+.school_list .left .school_details li > a dl dd:nth-of-type(2):before {
+  display: inline-block;
+  content: "";
+  margin-right: 2px;
+  width: 16px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: 0 -47px;
+}
+.school_list .right {
+  display: inline;
+  background-color: #FFF;
+  float: right;
+  width: 295px;
+  overflow: hidden;
+}
+.school_list .right .title {
+  margin-top: 22px;
+  height: 28px;
+  line-height: 28px;
+}
+.school_list .right .title span {
+  float: left;
+  display: inline;
+  color: #333333;
+  font-size: 16px;
+}
+.school_list .right .title span:before {
+  display: inline;
+  content: "";
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: 4px;
+  margin-left: 15px;
+  margin-right: 4px;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: 0 0;
+}
+.school_list .right .title a {
+  float: right;
+  display: inline;
+  margin-right: 15px;
+  color: #666666;
+}
+.school_list .right ul {
+  padding: 5px 5px 22px 5px;
+}
+.school_list .right ul li {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.school_list .right ul li a {
+  display: block;
+}
+.school_list .right ul li a img {
+  float: left;
+  display: inline;
+  width: 110px;
+  height: 60px;
+  margin-right: 8px;
+}
+.school_list .right ul li a dl {
+  float: left;
+  display: inline;
+  width: 146px;
+}
+.school_list .right ul li a dl dt {
+  font-size: 14px;
+  color: #333;
+}
+.school_list .right ul li a dl dd {
+  color: #999999;
+}
+.school_list .right ul li a dl dt,
+.school_list .right ul li a dl dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.school_list .right ul li a dl dd:last-child {
+  font-size: 16px;
+  color: #ea9b65;
+}
+.school_list .right ul li a dl dd:last-child em {
+  font-size: 12px;
+}
+.school_list .right ul li:hover {
+  -webkit-box-shadow: 0 0 1px #808080;
+  -moz-box-shadow: 0 0 1px #808080;
+  box-shadow: 0 0 1px #808080;
+  -ms-shadow: 0 0 1px #808080;
+  -o-shadow: 0 0 1px #808080;
+}
+.school_list .right ul li:hover dt {
+  color: #29b572;
+}
+/*# sourceMappingURL=Courselist.css.map */

@@ -1,0 +1,225 @@
+/*用户评价页*/
+.Coursedetail .left .access ,.Content .left .access {
+  padding: 0 30px 60px;
+  display: none;
+}
+.Coursedetail .left .access .accessDetail,.Content .left .access .accessDetail {
+  border-bottom: 1px solid #E8E8E8;
+}
+.Coursedetail .left .access .accessDetail div,.Content .left .access .accessDetail div {
+  height: 80px;
+  float: left;
+  width: 427px;
+  margin: 50px 0;
+}
+.Coursedetail .left .access .accessDetail .left,.Content .left .access .accessDetail .left {
+  border-right: 1px solid #E8E8E8;
+  text-align: right;
+}
+.Coursedetail .left .access .accessDetail .left span, .Content .left .access .accessDetail .left span{
+  display: inline-block;
+  font-size: 34px;
+  color: #ff5000;
+  margin-right: 88px;
+  line-height: 1;
+}
+.Coursedetail .left .access .accessDetail .left .star,.Content .left .access .accessDetail .left .star  {
+  margin: 0;
+  height: auto;
+  float: none;
+}
+.Coursedetail .left .access .accessDetail .left .star label,.Content .left .access .accessDetail .left .star label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/public/15ico_bg.png) no-repeat;
+  background-position: 0 -980px;
+  margin: 5px 2px 5px 0;
+}
+.Coursedetail .left .access .accessDetail .left .star .active,.Content .left .access .accessDetail .left .star .active {
+  background-position: 0 -1002px;
+}
+.Coursedetail .left .access .accessDetail .left .star label:last-child,.Content .left .access .accessDetail .left .star label:last-child {
+  margin-right: 60px;
+}
+.Coursedetail .left .access .accessDetail .left p,.Content .left .access .accessDetail .left p  {
+  font-size: 14px;
+  color: #666666;
+  padding-right: 55px;
+  line-height: 1;
+}
+.Coursedetail .left .access .accessDetail ol, .Content .left .access .accessDetail ol{
+  height: 100%;
+  padding-left: 80px;
+}
+.Coursedetail .left .access .accessDetail ol li,.Content .left .access .accessDetail ol li {
+  height: 26px;
+  line-height: 26px;
+  color: #666666;
+}
+.Coursedetail .left .access .accessDetail ol li span,.Content .left .access .accessDetail ol li span {
+  position: relative;
+  width: 136px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #E8E8E8;
+  vertical-align: middle;
+}
+.Coursedetail .left .access .accessDetail ol li span i,.Content .left .access .accessDetail ol li span i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #ffb200;
+}
+.Coursedetail .left .access .accessDetail ol li em,.Content .left .access .accessDetail ol li em {
+  vertical-align: middle;
+}
+.Coursedetail .left .access .accessDetail ol li b,.Content .left .access .accessDetail ol li b {
+  vertical-align: middle;
+}
+.Coursedetail .left .access .inpression ,.Content .left .access .inpression {
+  overflow: hidden;
+  font-size: 14px;
+}
+.Coursedetail .left .access .inpression p, .Content .left .access .inpression p{
+  color: #333333;
+  margin: 50px 0;
+}
+.Coursedetail .left .access .inpression div,.Content .left .access .inpression div {
+  border: 1px solid #E8E8E8;
+  padding-bottom: 50px;
+}
+.Coursedetail .left .access .inpression div h3 ,.Content .left .access .inpression div h3 {
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #E8E8E8;
+  color: #333333;
+}
+.Coursedetail .left .access .inpression div dl, .Content .left .access .inpression div dl{
+  padding: 0 20px;
+}
+.Coursedetail .left .access .inpression div dl dt, .Content .left .access .inpression div dl dt{
+  color: #999999;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.Coursedetail .left .access .inpression div dl dt span ,.Content .left .access .inpression div dl dt span {
+  margin-right: 5px;
+  float: left;
+  display: inline;
+}
+.Coursedetail .left .access .inpression div dl dt span label ,.Content .left .access .inpression div dl dt span label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../../img/public/15ico_bg.png) no-repeat;
+  background-position: -2px -702px;
+}
+.Coursedetail .left .access .inpression div dl dt span .active,.Content .left .access .inpression div dl dt span .active {
+  background-position: -2px -720px;
+}
+.Coursedetail .left .access .inpression div dl dt i ,.Content .left .access .inpression div dl dt i {
+  display: inline;
+  float: left;
+}
+.Coursedetail .left .access .inpression div dl dt em,.Content .left .access .inpression div dl dt em {
+  float: right;
+}
+.Coursedetail .left .access .inpression div dl dd, .Content.left .access .inpression div dl dd{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+/***************右边列表部分****/
+.Coursedetail .right .wrap,.Content .right .wrap{
+	overflow: hidden;
+	background-color:#FFF;
+}
+.Coursedetail .right .title,.Content .right .title {
+  background-color: #FFF;
+  margin-top: 22px;
+  height: 28px;
+  line-height: 28px;
+}
+.Coursedetail .right .title span,.Content .right .title span {
+  float: left;
+  display: inline;
+  color: #333333;
+  font-size: 16px;
+}
+.Coursedetail .right .title span:before,.Content .right .title span:before {
+  display: inline;
+  content: "";
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: 4px;
+  margin-left: 15px;
+  margin-right: 4px;
+  background: url(../../img/public/schoolicon.png) no-repeat;
+  background-position: 0 0;
+}
+.Coursedetail .right .title a,.Content .right .title a  {
+  float: right;
+  display: inline;
+  margin-right: 15px;
+  color: #666666;
+}
+.Coursedetail .right ul, .Content .right ul{
+  background-color: #FFF;
+  padding: 5px 5px 22px 5px;
+}
+.Coursedetail .right ul li, .Content .right ul li{
+  padding: 10px;
+  box-sizing: border-box;
+}
+.Coursedetail .right ul li a, .Content .right ul li a{
+  display: block;
+}
+.Coursedetail .right ul li a img,.Content .right ul li a img {
+  float: left;
+  display: inline;
+  width: 110px;
+  height: 60px;
+  margin-right: 8px;
+}
+.Coursedetail .right ul li a dl ,.Content .right ul li a dl{
+  float: left;
+  display: inline;
+  width: 146px;
+}
+.Coursedetail .right ul li a dl dt,.Content .right ul li a dl dt{
+  font-size: 14px;
+  color: #333;
+}
+.Coursedetail .right ul li a dl dd,.Content .right ul li a dl dd {
+  color: #999999;
+}
+.Coursedetail .right ul li a dl dt,.Coursedetail .right ul li a dl dd ,.Content .right ul li a dl dt,.Content .right ul li a dl dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Coursedetail .right ul li a dl dd:last-child{
+  font-size: 16px;
+  color: #ea9b65;
+}
+.Coursedetail .right ul li a dl dd:last-child em{
+  font-size: 12px;
+}
+.Coursedetail .right ul li:hover,.Content .right ul li:hover {
+  -webkit-box-shadow: 0 0 1px #808080;
+  -moz-box-shadow: 0 0 1px #808080;
+  box-shadow: 0 0 1px #808080;
+  -ms-shadow: 0 0 1px #808080;
+  -o-shadow: 0 0 1px #808080;
+}
+.Coursedetail .right ul li:hover dt,.Content .right ul li:hover dt {
+  color: #29b572;
+}
