@@ -1,0 +1,235 @@
+头部部分 begin ：*/
+.header-inner{
+	width: 976px;
+	margin:0 auto;
+}
+ul.action-list-wrap{
+	float: right;
+}
+.action-list-wrap>li{
+	float: left;
+}
+/*头部部分 end */
+/*中间部分的样式 begin ：*/
+.content-wrap{
+	width: 100%;
+	min-height: 600px;
+	background: url(../../img/login/login_bg.jpg) no-repeat;
+	background-position: center;
+}
+.content-inner{
+	position: relative;
+	width: 970px;
+	margin:0 auto;
+	min-height: 600px;
+	/*border: 1px solid red;*/
+}
+.login-box{
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 320px;
+	/*border: 1px solid cyan;*/
+}
+ul.login-tab-btn{
+	height: 50px;
+	border-bottom: 1px solid #cfcfcf;
+	background-color: #fff;
+}
+.login-tab-btn>li{
+	float: left;
+	width: 50%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #666;
+}
+.login-tab-btn>li:hover{
+	font-size: 1.8rem;
+	color: #33b574;
+	border-bottom:2px solid #33b574;
+}
+.login-tab-btn>li.selectBtnActive{
+	font-size: 1.8rem;
+	color: #33b574;
+	border-bottom:2px solid #33b574;
+}
+
+ul.info-wrap{
+	padding: 36px 30px 58px;
+	background-color: rgba(255,255,255,0.9);
+}
+.info-wrap p{
+	padding-left: 24px;
+	background: url(../../img/login/icon_bg.png) no-repeat;
+	background-position: 2px -144px;
+	font-size: 1.2rem;
+	color: #e82824;
+	display: none;
+}
+.label-public{
+	display: block;
+	width: 100%;
+	height: 38px;
+	border:1px solid #ccc;
+	background: url(../../img/login/icon_bg.png) no-repeat;
+	background-size: 18px 1320px;
+	background-position: 0 0;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	background-color: #fff;
+	margin:8px 0;
+}
+.label-public input{
+	height: 20px;
+	padding-left: 10px;
+	border:none;
+	border-left: 1px solid #e8e8e8;
+}
+/*登录：*/
+.login-phone-wrap{
+	background-position: 7px 11px;
+}
+.login-code-box{
+	margin:8px 0;
+}
+.login-code-wrap{
+	float: left;
+	width: 160px;
+	overflow: hidden;
+	background-position: 7px -51px;
+	margin:0;
+}
+.get-test-code{
+	float: right;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	font-size: 1.4rem;
+	color: #33b574;
+	margin-top: 3px;
+}
+.login-pwd-wrap{
+	background-position: 7px -21px;
+}
+.login-tips{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	color: #848585;
+	font-size: 1.2rem;
+	margin:8px 0;
+}
+.login-tips>span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/login/icon_bg.png) no-repeat;
+	background-position: 0 -73px;
+}
+.login-tips>span.bgTipsActive{
+	background-position: 0 -97px;
+}
+.login-tips>input{
+	display: none;
+}
+.login-tips a{
+	float: right;
+}
+.login-tips a:hover{
+	color: #29b572;
+}
+.login-submit-wrap>input{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.6rem;
+	background-color: #33b574;
+	color: #fff;
+	border: none;
+	outline: none;
+	margin-top: 10px;
+}
+
+/*注册：*/
+.info-create{
+	display: none;
+}
+.create-phone-wrap{
+	background-position: 7px 11px;
+}
+.create-code-box{
+	margin:8px 0;
+}
+.create-code-wrap{
+	float: left;
+	width: 160px;
+	overflow: hidden;
+	background-position: 7px -51px;
+	margin:0;
+}
+.get-phone-code{
+	float: right;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	font-size: 1.4rem;
+	color: #33b574;
+	margin-top: 3px;
+}
+.get-phone-code:hover{
+	border:1px solid #33b574;
+}
+.create-pwd1-wrap{
+	background-position: 7px -21px;
+}
+.create-pwd2-wrap{
+	background-position: 7px -135px;
+}
+.create-agree-item{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+.create-agree-item>span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: url(../../img/login/icon_bg.png) no-repeat;
+	background-position: 0 -73px;
+}
+.create-agree-item>span.bgItemActive{
+	background-position: 0 -97px;
+}
+.create-agree-item>input{
+	display: none;
+}
+.create-agree-item>a{
+	display: inline-block;
+	color: #8c8e8d;
+	font-size: 1.2rem;
+}
+.create-submit-wrap>input{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.6rem;
+	background-color: #33b574;
+	color: #fff;
+	border: none;
+	outline: none;
+	margin-top: 10px;
+}
+/*中间部分的样式 end 

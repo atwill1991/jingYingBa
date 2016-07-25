@@ -3,8 +3,193 @@
 <head>
 	<meta charset="UTF-8">
 	<title>精英吧</title>
+	<link rel="stylesheet" type="text/css" href="../../css/index/base.css">
+	<link rel="stylesheet" type="text/css" href="../../css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="../../css/login/login.css">
 </head>
 <body>
-	
+	<!-- 头部的导航区域：-->
+	<div class="header-wrap">
+		<header class="header-inner clearfix">
+			<!-- 图标logo： -->
+			<div class="logo-wrap">
+				<a href="javascript:void(0)" class="logo-icon"><img src="../../img/public/logo-icon.png"></a>
+				<span class="icon-font"><img src="../../img/public/logo-font.png"></span>
+			</div>
+			<!-- 功能按键： -->
+			<ul class="action-list-wrap clearfix">
+				<li>
+					<a href="javascript:void(0)">课程</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">互联网头条</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><span class="add-icon"></span>&nbsp;提问</a>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<div class="content-wrap">
+		<div class="content-inner">
+			<div class="login-box">
+				<ul class="login-tab-btn clearfix">
+					<li class="login-btn selectBtnActive">登录</li>
+					<li class="create-btn">注册</li>
+				</ul>
+				<ul class="info-wrap">
+				<!-- 登录： -->
+					<li class="info-login">
+						<form action="">
+							<label class="login-phone-wrap label-public">
+								<input type="text" class="login-phone" placeholder="请输入手机号"> 
+							</label>
+							<p class="login-phone-error">手机号不能为空</p>
+
+							<label class="login-pwd-wrap label-public">
+								<input type="password" class="login-pwd" placeholder="请输入密码"> 	
+							</label>
+							<p class="login-pwd-error">密码不能为空</p>
+
+							<div class="login-code-box clearfix">
+								<label class="login-code-wrap label-public">
+									<input type="text" class="login-code" placeholder="验证码"> 
+								</label>
+								<a href="javascript:void(0)" class="get-test-code">
+									<img src="" alt="">
+								</a>
+							</div>
+							<p class="login-code-error">请填写验证码</p>
+							
+							<label class="login-tips clearfix">
+								<span></span>
+								<input type="checkbox">
+								<em>记住我</em>
+								<a href="javascript:void(0)">忘记密码？</a> 
+							</label>
+							<label class="login-submit-wrap">
+								<input type="button" value="登录" class="login-btn"> 
+							</label>
+						</form> 
+					</li>
+				<!-- 注册： -->
+					<li class="info-create">
+						<form action="">
+							<label class="create-phone-wrap label-public">
+								<input type="text" class="create-phone" placeholder="请输入手机号"> 
+							</label>
+							<p class="create-phone-error">手机号不能为空</p>
+
+							<div class="create-code-box clearfix">
+								<label class="create-code-wrap label-public">
+									<input type="text" class="create-code" placeholder="验证码"> 
+								</label>
+								<a href="javascript:void(0)" class="get-phone-code">获取验证码</a>
+							</div>
+							<p class="create-code-error">验证码不能为空</p>
+
+							<label class="create-pwd1-wrap label-public">
+								<input type="password" class="create-pwd1" placeholder="请输入密码"> 	
+							</label>
+							<p class="create-pwd1-error">密码不能为空</p>
+
+							<label class="create-pwd2-wrap label-public">
+								<input type="password" class="create-pwd2" placeholder="请输入密码"> 	
+							</label>
+							<p class="create-pwd3-error">请再次输入密码</p>
+							<label class="create-agree-item">
+								<span class="bgItemActive"></span>
+								<input type="checkbox" checked="checked">
+								<a href="javascript:void(0)">同意网站条款</a>
+							</label>
+							<p class="item-error">请勾选同意条款</p>
+							<label class="create-submit-wrap">
+								<input type="button" value="提交" class="create-btn"> 
+							</label>
+							
+						</form> 
+					</li>
+				</ul>
+			</div>			
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/public/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// tab切换事件：
+			$(".login-tab-btn").on("click","li",function(){
+				$(".info-login p").hide();
+				$(".info-create p").hide();
+				var index=$(this).index();
+				$(this).addClass("selectBtnActive").siblings().removeClass("selectBtnActive");
+				$(".info-wrap>li").hide().eq(index).show();
+			})
+			// 登录页面的事件：
+			//点击提交表单内容时:
+			$(".login-btn").on("click",function(){
+				// 判断输入框是否为空：
+				$(".info-login input").each(function(index,key){
+					// console.log("index:"+index);
+					// console.log("key:"+key);
+					if(!$(key).val().trim()){
+						$(".info-login p").eq(index).show();
+					}else{
+						$(".info-login p").eq(index).hide();
+					}
+				})
+			})
+			// 手机号码的正则检测：
+			var regPhone=/^[1]\d{10}$/
+			$(".login-phone").on("blur",function(){
+				console.log("sd")
+				if(!regPhone.test($(".login-phone").val().trim())&&$(".login-phone").val().trim()){
+					$(".login-phone-error").text("手机号码格式不正确");
+					$(".login-phone-error").show();
+				}else if(!$(".login-phone").val().trim()){
+					$(".login-phone-error").text("手机号不能为空");
+					$(".login-phone-error").show();
+				}else{
+					$(".login-phone-error").text("手机号不能为空");
+					$(".login-phone-error").hide();
+				}
+			})
+			$(".login-tips>span").on("click",function(){
+				$(".login-tips>input").trigger("click");//事件模拟,模拟input选择框
+				$(this).toggleClass("bgTipsActive");
+			})
+			// 注册页面的事件：
+			//点击提交表单内容时:
+			$(".create-btn").on("click",function(){
+				// 判断输入框是否为空：
+				$(".info-create input").each(function(index,key){
+					// console.log("index:"+index);
+					// console.log("key:"+key);
+					if(!$(key).val().trim()){
+						$(".info-create p").eq(index).show();
+					}else{
+						$(".info-create p").eq(index).hide();
+					}
+				})
+			})
+			// 手机号码的正则检测：
+			$(".create-phone").on("blur",function(){
+				console.log("sd")
+				if(!regPhone.test($(".create-phone").val().trim())&&$(".create-phone").val().trim()){
+					$(".create-phone-error").text("手机号码格式不正确");
+					$(".create-phone-error").show();
+				}else if(!$(".create-phone").val().trim()){
+					$(".create-phone-error").text("手机号不能为空");
+					$(".create-phone-error").show();
+				}else{
+					$(".create-phone-error").text("手机号不能为空");
+					$(".create-phone-error").hide();
+				}
+			})
+			$(".create-agree-item>span").on("click",function(){
+				$(".create-agree-item>input").trigger("click");//事件模拟,模拟input选择框
+				$(this).toggleClass("bgItemActive");
+			})
+		})
+	</script>
 </body>
 </html>
