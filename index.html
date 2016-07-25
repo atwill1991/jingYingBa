@@ -98,6 +98,7 @@
 			</div>
 		</header>
 	</div>
+<<<<<<< HEAD
 	<!-- 中部的内容区域： -->
 	<div class="content-wrap">
 		<div class="content-inner">
@@ -414,6 +415,10 @@
 		<a href="javascript:void(0)">才信教育©2015-2017</a>
 		<a href="javascript:void(0)">京ICP备16013954号</a>
 	</address>
+=======
+	这是首页
+	我不是添加东西了嘛
+>>>>>>> a7bc31c9dcb666558fda4479a82d5fac858b6151
 	<script type="text/javascript" src="js/public/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
@@ -480,7 +485,6 @@
 				})
 			})
 			// 返回顶部的事件：
-			$(".go-top-wrap").css("top",$("body").scrollTop()+$(window).height()-$(".go-top-wrap").height()-20);
 			// 改变屏幕大小时触发：
 			$(window).resize(function(){
 				$(".go-top-wrap").css("top",$("body").scrollTop()+$(window).height()-$(".go-top-wrap").height()-20);
@@ -489,6 +493,7 @@
 			$(window).scroll(function(){
 				$(".go-top-wrap").css("top",$("body").scrollTop()+$(window).height()-$(".go-top-wrap").height()-20);
 			})
+			// 点击返回顶部：
 			$(".gotop-btn").on("click",function(){
 				$("html,body").animate({//加html兼容ie
 					"scrollTop":"0",
