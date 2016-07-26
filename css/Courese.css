@@ -1,0 +1,610 @@
+.mainContent {
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+.CoureseBanner {
+  width: 1168px;
+  height: 310px;
+  background-color: #FFF;
+  margin: 28px auto;
+  padding: 30px;
+}
+.CoureseBanner .left {
+  float: left;
+  display: inline;
+  width: 470px;
+  height: 310px;
+  margin-right: 30px;
+}
+.CoureseBanner .left > img {
+  display: block;
+  width: 100%;
+  height: 240px;
+}
+.CoureseBanner .left .picBox {
+  margin-top: 10px;
+}
+.CoureseBanner .left .picBox img {
+  width: 110px;
+  height: 60px;
+  margin-right: 10px;
+  background-color: #CCCCCC;
+  float: left;
+}
+.CoureseBanner .left .picBox img:last-child {
+  margin-right: 0;
+}
+.CoureseBanner .right {
+  float: left;
+  display: inline;
+  width: 668px;
+  height: 310px;
+}
+.CoureseBanner .right h1 {
+  font-size: 24px;
+  color: #333333;
+  line-height: 2.4166666666666665;
+  margin-bottom: 9px;
+}
+.CoureseBanner .right p {
+  font-size: 14px;
+  color: #666666;
+}
+.CoureseBanner .right p a {
+  font-size: 12px;
+}
+.CoureseBanner .right p:before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 14px;
+  vertical-align: middle;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: -13px -49px;
+  margin-right: 6px;
+}
+.CoureseBanner .right .address:before {
+  background-position: 2px -49px;
+}
+.CoureseBanner .right dl {
+  margin-top: 27px;
+  width: 412px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.CoureseBanner .right dl dt {
+  height: 54px;
+  background-color: #29b572;
+  color: #FFF;
+}
+.CoureseBanner .right dl dt span {
+  float: left;
+  display: inline;
+  font-size: 28px;
+  margin-left: 20px;
+  line-height: 54px;
+}
+.CoureseBanner .right dl dt span span {
+  font-size: 20px;
+  margin-left: 0;
+  display: inline-block;
+  line-height: 1;
+  margin-top: 20px;
+}
+.CoureseBanner .right dl dt em {
+  float: left;
+  margin-left: 32px;
+  font-size: 14px;
+  display: inline;
+  margin-top: 20px;
+}
+.CoureseBanner .right dl dt i {
+  float: right;
+  display: inline;
+  margin-right: 20px;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #29b572;
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+  background-color: #FFFFFF;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+}
+.CoureseBanner .right dl dt b {
+  float: right;
+  line-height: 54px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.CoureseBanner .right dl dd span {
+  display: inline;
+  float: left;
+  text-align: center;
+  height: 47px;
+  line-height: 47px;
+  border-left: 1px solid #E8E8E8;
+  width: 136px;
+  font-size: 14px;
+  color: #999999;
+}
+.CoureseBanner .right dl dd span em {
+  color: #29b572;
+}
+.CoureseBanner .right dl dd span:last-child {
+  border-right: 1px solid #E8E8E8;
+}
+.CoureseBanner .right .btnList {
+  margin-top: 30px;
+}
+.CoureseBanner .right .btnList a {
+  display: inline-block;
+  height: 40px;
+  width: 138px;
+  border: 1px solid #ea9b65;
+  color: #FFF;
+  background-color: #ea9b65;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.CoureseBanner .right .btnList a:first-child:hover {
+  background-color: #E0884C;
+}
+.CoureseBanner .right .btnList a:last-child {
+  background-color: #FFF;
+  color: #ea9b65;
+}
+.Coursedetail {
+  width: 1228px;
+  margin: 0 auto;
+}
+.Coursedetail .left {
+  position: relative;
+  float: left;
+  width: 915px;
+  background-color: #FFF;
+  display: inline;
+  overflow: hidden;
+}
+.Coursedetail .left .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 144px;
+  background-color: #29b572;
+}
+.Coursedetail .left ul {
+  margin-bottom: 16px;
+}
+.Coursedetail .left ul li {
+  float: left;
+  width: 144px;
+  height: 66px;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  line-height: 66px;
+  cursor: pointer;
+}
+.Coursedetail .left .details {
+  padding: 0 30px;
+/*  display: none;*/
+}
+.Coursedetail .left .details p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.Coursedetail .left .details p em {
+  color: #999999;
+}
+.Coursedetail .left .details p span {
+  color: #333333;
+  display: inline-block;
+  width: 745px;
+  vertical-align: top;
+  margin-left: 24px;
+}
+.Coursedetail .left .details hr {
+  margin: 24px 0;
+  width: 848px;
+  border: none;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+.Coursedetail .left .othersCourse {
+  display: none;
+}
+.Coursedetail .left .othersCourse dl {
+  padding: 0 30px 60px;
+}
+.Coursedetail .left .othersCourse dl dt {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.Coursedetail .left .othersCourse dl dt a {
+  color: #333333;
+  float: left;
+  display: inline;
+  margin-top: 4px;
+}
+.Coursedetail .left .othersCourse dl dt a:hover {
+  color: #29b572;
+}
+.Coursedetail .left .othersCourse dl dt span {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  color: #ea9b65;
+}
+.Coursedetail .left .othersCourse dl dt span em {
+  font-size: 14px;
+}
+.Coursedetail .left .othersCourse dl dd {
+  color: #999999;
+  font-size: 14px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.Coursedetail .left .othersCourse dl dd span,
+.Coursedetail .left .othersCourse dl dd i,
+.Coursedetail .left .othersCourse dl dd b {
+  float: left;
+  display: inline;
+}
+.Coursedetail .left .othersCourse dl dd span:first-child:before {
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: -15px -49px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.Coursedetail .left .othersCourse dl dd i {
+  margin-left: 30px;
+}
+.Coursedetail .left .othersCourse dl dd i:before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 14px;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: 0 -681px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.Coursedetail .left .othersCourse dl dd b {
+  margin-left: 60px;
+}
+.Coursedetail .left .othersCourse dl dd b em {
+  color: #29b572;
+}
+.Coursedetail .left .othersCourse dl dd span:last-child {
+  float: right;
+}
+.Coursedetail .left .access {
+  padding: 0 30px 60px;
+  display: none;
+}
+.Coursedetail .left .access .accessDetail {
+  border-bottom: 1px solid #E8E8E8;
+}
+.Coursedetail .left .access .accessDetail div {
+  height: 80px;
+  float: left;
+  width: 427px;
+  margin: 50px 0;
+}
+.Coursedetail .left .access .accessDetail .left {
+  border-right: 1px solid #E8E8E8;
+  text-align: right;
+}
+.Coursedetail .left .access .accessDetail .left span {
+  display: inline-block;
+  font-size: 34px;
+  color: #ff5000;
+  margin-right: 88px;
+  line-height: 1;
+}
+.Coursedetail .left .access .accessDetail .left .star {
+  margin: 0;
+  height: auto;
+  float: none;
+}
+.Coursedetail .left .access .accessDetail .left .star label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: 0 -980px;
+  margin: 5px 2px 5px 0;
+}
+.Coursedetail .left .access .accessDetail .left .star .active {
+  background-position: 0 -1002px;
+}
+.Coursedetail .left .access .accessDetail .left .star label:last-child {
+  margin-right: 60px;
+}
+.Coursedetail .left .access .accessDetail .left p {
+  font-size: 14px;
+  color: #666666;
+  padding-right: 55px;
+  line-height: 1;
+}
+.Coursedetail .left .access .accessDetail ol {
+  height: 100%;
+  padding-left: 80px;
+}
+.Coursedetail .left .access .accessDetail ol li {
+  height: 26px;
+  line-height: 26px;
+  color: #666666;
+}
+.Coursedetail .left .access .accessDetail ol li span {
+  position: relative;
+  width: 136px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #E8E8E8;
+  vertical-align: middle;
+}
+.Coursedetail .left .access .accessDetail ol li span i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #ffb200;
+}
+.Coursedetail .left .access .accessDetail ol li em {
+  vertical-align: middle;
+}
+.Coursedetail .left .access .accessDetail ol li b {
+  vertical-align: middle;
+}
+.Coursedetail .left .access .inpression {
+  overflow: hidden;
+  font-size: 14px;
+}
+.Coursedetail .left .access .inpression p {
+  color: #333333;
+  margin: 50px 0;
+}
+.Coursedetail .left .access .inpression div {
+  border: 1px solid #E8E8E8;
+  padding-bottom: 50px;
+}
+.Coursedetail .left .access .inpression div h3 {
+  padding-left: 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #E8E8E8;
+  color: #333333;
+}
+.Coursedetail .left .access .inpression div dl {
+  padding: 0 20px;
+}
+.Coursedetail .left .access .inpression div dl dt {
+  color: #999999;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.Coursedetail .left .access .inpression div dl dt span {
+  margin-right: 5px;
+  float: left;
+  display: inline;
+}
+.Coursedetail .left .access .inpression div dl dt span label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: -2px -702px;
+}
+.Coursedetail .left .access .inpression div dl dt span .active {
+  background-position: -2px -720px;
+}
+.Coursedetail .left .access .inpression div dl dt i {
+  display: inline;
+  float: left;
+}
+.Coursedetail .left .access .inpression div dl dt em {
+  float: right;
+}
+.Coursedetail .left .access .inpression div dl dd {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.Coursedetail .right {
+  display: inline;
+  float: right;
+  width: 295px;
+  overflow: hidden;
+}
+
+.Coursedetail .right .question {
+  margin-top: 15px;
+  background-color: #FFF;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.Coursedetail .right .question .title {
+  margin-top: 26px;
+  font-size: 16px;
+}
+.Coursedetail .right .question .title:before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  background: url(../img/public/schoolicon.png) no-repeat;
+  background-position: -20px -1px;
+  margin-right: 4px;
+}
+.Coursedetail .right .question dl {
+  margin-top: 20px;
+}
+.Coursedetail .right .question dl p {
+  display: inline-block;
+  vertical-align: top;
+}
+.Coursedetail .right .question dl dt {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.Coursedetail .right .question dl dt span {
+  color: #ea9b65;
+}
+.Coursedetail .right .question dl dt p {
+  color: #333333;
+  width: 234px;
+}
+.Coursedetail .right .question dl dd {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.Coursedetail .right .question dl dd span {
+  font-size: 14px;
+  color: #29b572;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Coursedetail .right .question dl dd p {
+  color: #666666;
+  width: 238px;
+  margin: 2px 0 0 2px;
+}
+/*# sourceMappingURL=Courese.css.map */
+.mask{
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+  display: none;
+}
+.mask form{
+	position:absolute;
+	width: 486px;
+	height:310px;
+	background-color:#FFF;
+	top:50%;
+	left:50%;
+	margin-left:-243px;
+	margin-top:-155px;
+}
+.mask form p{
+	height: 30px;
+	line-height: 30px;
+	background-color:#29b572;
+	color:#FFF;
+	font-size:14px;
+	text-indent: 16px;
+	position: relative;
+}
+.mask form span{
+	position: absolute;
+	height: 30px;
+	top:0;
+	right:16px;
+  cursor: pointer;
+}
+.mask form .title{
+	margin: 44px 0 20px 40px;
+	color:#999999;
+	
+}
+.mask form .info{
+	position: relative;
+	margin-left: 40px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+.mask form .info label{
+	font-size: 14px;
+	color:#666666;
+}
+.mask form .info input,.mask form select{
+	height: 28px;
+	padding: 0;
+	border:1px solid #e0e0e0;
+	width: 266px;
+	
+}
+.mask form select{
+	background-color:#FFF;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-ms-border-radius:0;
+	-o-border-radius:0;
+	font-size: 14px;
+	color:#666666;
+	text-indent: 10px;
+	line-height: 30px;
+}
+.mask form em{
+	position: absolute;
+	height: 30px;
+}
+.mask form em{
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	position: absolute;
+	right: 125px;
+	top: 12.5px;
+	background: url(../img/public/15ico_bg.png) no-repeat;
+	background-position: -5px -576px;
+}
+.btnList a,.btnList input{
+	float: left;
+	display: inline;
+	width: 98px;
+	height: 34px;
+	border-radius:2px;
+	text-align: center;
+	line-height: 34px;	
+	margin-right: 10px;
+}
+.btnList a{
+	margin-right:22px;
+	background-color:#f5f5f5;
+	color:#333333;
+	border:1px solid #d9d9d9; 
+}
+.btnList .submit{
+	padding: 0;
+	width:100px;
+	height: 36px;
+	line-height: 36px;
+	color:#FFF;
+	background-color:#29b572;
+	border:none;
+	cursor: pointer;
+}
+.mask .btnList:last-child{
+	text-align: center;
+}
+.mask .btnList:last-child a,.btnList:last-child .submit{
+	display: inline-block;
+	float: none;
+}
