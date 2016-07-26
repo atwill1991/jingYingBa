@@ -113,6 +113,38 @@
 			</div>			
 		</div>
 	</div>
+<!-- 提交成功的弹窗： -->
+	<div class="mask-submit-wrap mask-wrap">
+		<div class="alert-submit-content alert-content">
+			<p class="tips clearfix">提示<span class="close-submit-btn close-btn"></span></p>
+			<p class="success-text show-text ">
+				<span>恭喜你，提交成功！</span>
+			</p>
+			<a href="javascript:void(0)" class="confirm-submit-btn confirm-btn">确定</a>
+		</div>
+	</div>
+<!-- 手机号不存在的弹窗： -->
+	<div class="mask-phone-wrap mask-wrap">
+		<div class="alert-phone-content alert-content">
+			<p class="tips clearfix">提示<span class="close-phone-btn close-btn"></span></p>
+			<p class="fail-text show-text ">
+				<span>很抱歉，该手机号不存在！</span>
+			</p>
+			<a href="javascript:void(0)" class="confirm-phone-btn confirm-btn">确定</a>
+		</div>
+	</div>
+<!-- 登录权限的提示弹窗： -->
+	<div class="mask-tips-wrap mask-wrap">
+		<div class="alert-tips-content alert-content">
+			<p class="tips clearfix">提示<span class="close-tips-btn close-btn"></span></p>
+			<p class="tips-text show-text ">
+				欢迎使用精英家产品，精英产品包括精英家、精英吧和口袋精英。
+ 				您目前只有精英吧的使用权限。
+				请以后用此账户直接登录精英吧。
+			</p>
+			<a href="javascript:void(0)" class="confirm-tips-btn confirm-btn">确定</a>
+		</div>
+	</div>
 	<script type="text/javascript" src="../../js/public/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
@@ -185,9 +217,33 @@
 					$(".create-phone-error").hide();
 				}
 			})
+			$(".get-phone-code").on("click",function(){
+				$(".create-phone").trigger("blur");//事件模拟
+			})
 			$(".create-agree-item>span").on("click",function(){
 				$(".create-agree-item>input").trigger("click");//事件模拟,模拟input选择框
 				$(this).toggleClass("bgItemActive");
+			})
+			// 提交成功后的弹窗的事件：
+			$(".close-submit-btn").on("click",function(){
+				$(".mask-submit-wrap").hide();
+			})
+			$(".confirm-submit-btn").on("click",function(){
+				$(".mask-submit-wrap").hide();
+			})
+			//手机号不存在的弹窗的事件：
+			$(".close-phone-btn").on("click",function(){
+				$(".mask-phone-wrap").hide();
+			})
+			$(".confirm-phone-btn").on("click",function(){
+				$(".mask-phone-wrap").hide();
+			})
+			//登录权限的提示弹窗的事件：
+			$(".close-tips-btn").on("click",function(){
+				$(".mask-tips-wrap").hide();
+			})
+			$(".confirm-tips-btn").on("click",function(){
+				$(".mask-tips-wrap").hide();
 			})
 		})
 	</script>

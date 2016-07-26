@@ -240,3 +240,36 @@ address>a:last-child:hover{
 	color: #29b583;
 }
 /*******************最底部的信息 end *******************/
+/******************用户登录后的头部的样式 begin ：*********************/
+.logo2-wrap{
+	height: 44px;
+	line-height: 44px;
+}
+.logo2-icon{
+	display: inline-block;
+	height: 44px;
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
+	vertical-align: middle;
+}
+.logo2-wrap>span{
+	font-size: 1.4rem;
+	color: #999;
+}
+.login2-wrap{
+	position: relative;
+}
+.login2-wrap>img{
+	vertical-align: middle;
+	margin-right: 6px;
+}
+.login2-wrap:after{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 10px;
+	/*border: 1px solid red;*/
+	background: url(../../img/index/more-icon-bg.png) no-repeat;
+	background-position: 1px -396px;
+}
+/******************用户登录后的头部的样式 end *********************/
