@@ -124,9 +124,9 @@
 							<p>Hi，中午好，</p>
 							<p>欢迎来到精英吧。</p>
 							<p class="btn-wrap">
-								<a href="javascript:void(0)" class="login-btn select-active-btn">登录</a>
+								<a href="html/login/login.html" class="login-btn select-active-btn">登录</a>
 								<a href="html/login/login.html" class="create-btn">注册</a>
-								<a href="html/login/login.html" class="my-center">个人中心</a>
+								<a href="javascript:void(0)" class="my-center">个人中心</a>
 							</p>
 						</li>
 					</ul>
@@ -369,7 +369,7 @@
 				<li class="friend-link"><a href="javascript:void(0)">触控科技</a></li>
 				<li class="friend-link"><a href="javascript:void(0)">互动百科</a></li>
 				<li class="friend-link"><a href="javascript:void(0)">搜房网</a></li>
-				<li class="friend-link more-link"><a href="javascript:void(0)">更多&nbsp;》</a></li>
+				<li class="friend-link more-link"><a href="html/link/link.html">更多&nbsp;》</a></li>
 			</ul>
 			<div class="footer-bottom clearfix">
 				<ul class="we-test-room">
@@ -419,6 +419,7 @@
 	<script type="text/javascript" src="js/public/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
+			// <!-- 位置部分绑定的事件 ： -->
 			$("body").on("click",function(){
 				$(".cur-location").removeClass("clickActive");
 				$(".city-list-wrap").addClass("city-list-show-hide");
@@ -439,7 +440,6 @@
 				// 事件模拟：
 				$(".cur-location").trigger("click");
 			})
-			
 			// 大图fade效果：
 			var index=0;
 			$(".select-bar>span").on("click",function(){

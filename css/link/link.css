@@ -1,0 +1,81 @@
+/*头部的样式：*/
+.logo-wrap{
+	height: 44px;
+	line-height: 44px;
+}
+.logo-icon{
+	display: inline-block;
+	height: 44px;
+	padding-right: 10px;
+	border-right: 1px solid #ccc;
+	vertical-align: middle;
+}
+.logo-wrap>span{
+	font-size: 1.4rem;
+	color: #999;
+}
+.login-wrap{
+	position: relative;
+}
+.login-wrap>img{
+	vertical-align: middle;
+	margin-right: 6px;
+}
+.login-wrap:after{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 10px;
+	/*border: 1px solid red;*/
+	background: url(../../img/index/more-icon-bg.png) no-repeat;
+	background-position: 1px -396px;
+}
+/*中间部分内容区域的样式：*/
+.content-wrap{
+	background-color: #f5f5f5;
+	padding-bottom: 50px;
+}
+.content-inner{
+	width: 1228px;
+	margin: 0 auto;
+}
+/*<!-- 合作伙伴部分的样式 ： -->*/
+.h2-public{
+	font-size: 2.2rem;
+	color: #333;
+	padding-top: 40px;
+	margin-bottom: 20px;
+}
+ul.work-link-wrap{
+	padding:35px 15px;
+	background-color: #fff;
+}
+.work-link-wrap>li{
+	float: left;
+	width: 152px;
+	height: 48px;
+	border:1px solid #e8e8e8;
+	margin:15px 8px;
+}
+.work-link-wrap>li>a{
+	display: block;
+}
+.work-link-wrap>li>a>img{
+	width: 100%;
+	max-height: 48px;
+}
+/*<!-- 友情链接的部分的样式 ： -->*/
+ul.friend-link-wrap{
+	background-color: #fff;
+	padding:50px 30px;
+}
+ul.friend-link-wrap>li{
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+ul.friend-link-wrap>li>a{
+	font-size: 1.4rem;
+	color: #333;
+}
+

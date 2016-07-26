@@ -129,7 +129,7 @@ ul.action-list-wrap{
 .action-list-wrap>li>a.clickActiveColor{
 	color: #33b574;
 }
-p.login-wrap{
+.login-wrap{
 	float: right;
 	height: 90px;
 	line-height: 90px;
