@@ -20,3 +20,4 @@ $(".close").on("click",function(e){
 $(".cancel").on("click",function(e){
 	$(".close").click();
 });
+

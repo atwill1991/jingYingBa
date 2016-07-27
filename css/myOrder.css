@@ -1,0 +1,366 @@
+html {
+  background-color: #F5F5F5;
+}
+.Content {
+  width: 1228px;
+  margin: 28px auto;
+}
+.Content .left {
+  float: left;
+  display: inline;
+  width: 170px;
+  height: 84px;
+  background: #FFFFFF;
+  position: relative;
+}
+.Content .left .bar {
+  position: absolute;
+  width: 2px;
+  height: 42px;
+  background-color: #29b572;
+  top: 0;
+  left: 0;
+}
+.Content .left .list li {
+  padding-left: 20px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+  background-color: #FFF;
+}
+.Content .left .list .active {
+  background-color: #FAFAFA;
+}
+.Content .right {
+  float: right;
+  display: inline;
+  width: 1039px;
+}
+.Content .right h1 {
+  font-size: 22px;
+  color: #333333;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.Content .right .mylist {
+  position: relative;
+  background: #FFFFFF;
+  padding-bottom: 55px;
+}
+.Content .right .mylist .bar {
+  position: absolute;
+  width: 124px;
+  height: 4px;
+  background-color: #29B572;
+  top: 0;
+  left: 0;
+}
+.Content .right .mylist .titleList {
+  padding-right: 30px;
+  margin-bottom: 18px;
+}
+.Content .right .mylist .titleList li {
+  width: 124px;
+  height: 66px;
+  line-height: 66px;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+}
+.Content .right .mylist .titleList .active a {
+  color: #29B572;
+}
+.Content .right .mylist .titleList .del {
+  font-size: 14px;
+  float: right;
+  text-align: right;
+}
+.Content .right .mylist .titleList .del a {
+  color: #999999;
+}
+.Content .right .mylist .titleList .del a:hover {
+  color: #29B572;
+}
+.Content .right .mylist header {
+  width: 979px;
+  height: 40px;
+  background-color: #fafafa;
+  border: 1px solid #E8E8E8;
+  margin: 0 auto;
+}
+.Content .right .mylist header ul li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+.Content .right .mylist header ul .all {
+  width: 80px;
+}
+.Content .right .mylist header ul .orderInfo {
+  width: 352px;
+}
+.Content .right .mylist header ul .orderTime {
+  width: 152px;
+}
+.Content .right .mylist header ul .quantity {
+  width: 40px;
+}
+.Content .right .mylist header ul .amount {
+  width: 94px;
+  text-align: right;
+}
+.Content .right .mylist header ul .status {
+  width: 170px;
+}
+.Content .right .mylist header ul li:last-child {
+  width: 48px;
+}
+.Content .right .mylist .listContent {
+  width: 951px;
+  margin: 0 auto;
+  padding: 0 14px;
+  border: 1px solid #E8E8E8;
+  border-top: none;
+}
+.Content .right .mylist .listContent li {
+  border-bottom: 1px solid #E8E8E8;
+}
+.Content .right .mylist .listContent li .select,
+.Content .right .mylist .listContent li img,
+.Content .right .mylist .listContent li dl,
+.Content .right .mylist .listContent li em,
+.Content .right .mylist .listContent li i,
+.Content .right .mylist .listContent li b,
+.Content .right .mylist .listContent li strong,
+.Content .right .mylist .listContent li a {
+  float: left;
+  display: inline;
+  font-size: 14px;
+}
+.Content .right .mylist .listContent li .select {
+  margin: 54px 12px 54px 0;
+}
+.Content .right .mylist .listContent li img {
+  width: 108px;
+  height: 66px;
+  margin: 28px 10px 28px 0;
+}
+.Content .right .mylist .listContent li dl {
+  height: 66px;
+  width: 260px;
+  margin: 28px 56px 28px 0;
+}
+.Content .right .mylist .listContent li dl dt,
+.Content .right .mylist .listContent li dl dd {
+  font-size: 14px;
+  line-height: 1.25;
+}
+.Content .right .mylist .listContent li dl dt a,
+.Content .right .mylist .listContent li dl dd a {
+  float: none;
+}
+.Content .right .mylist .listContent li dl dt a:hover,
+.Content .right .mylist .listContent li dl dd a:hover {
+  color: #29B572;
+}
+.Content .right .mylist .listContent li dl dd {
+  color: #999999;
+  margin-top: 15px;
+  line-height: 1;
+}
+.Content .right .mylist .listContent li em,
+.Content .right .mylist .listContent li i,
+.Content .right .mylist .listContent li b,
+.Content .right .mylist .listContent li strong {
+  height: 122px;
+  line-height: 122px;
+}
+.Content .right .mylist .listContent li em {
+  margin-right: 52px;
+}
+.Content .right .mylist .listContent li i {
+  margin-right: 74px;
+}
+.Content .right .mylist .listContent li b {
+  margin-right: 60px;
+}
+.Content .right .mylist .listContent li strong {
+  margin-right: 50px;
+}
+.Content .right .mylist .listContent li .btn {
+  width: 68px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  background-color: #e0884c;
+  border: 1px solid #E0884C;
+  color: #FFFFFF;
+  margin: 47px 0;
+}
+.Content .right .mylist .listContent li .refund {
+  background-color: #FFF;
+  color: #E0884C;
+}
+.Content .right .mylist .listContent li .finish {
+  background-color: transparent;
+  border-color: transparent;
+  color: #333333;
+}
+.Content .right .mylist .listContent li:last-child {
+  border-bottom: none;
+}
+.selectAll,
+.select {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: 0 -74px;
+}
+.selected {
+  background-position: 0 -97px;
+}
+address {
+  background-color: #FFF;
+}
+.right form {
+  float: left;
+  width: 892px;
+  padding: 30px;
+  border-top: 1px solid #E8E8E8;
+  background-color: #FAFAFA;
+  overflow: hidden;
+  display: none;
+}
+.right form div {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+.right form div label {
+  padding-left: 10px;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: -4px -781px;
+}
+.right form div select {
+  width: 218px;
+  height: 30px;
+  border-radius: 0;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: 98% -564px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8E8E8;
+}
+.right form div input {
+  width: 216px;
+  height: 28px;
+  border: 1px solid #E8E8E8;
+}
+.right form .explan {
+  height: 122px;
+  line-height: 1;
+}
+.right form .explan label {
+  background: none;
+}
+.right form .explan textarea {
+  width: 538px;
+  height: 100px;
+  border: 1px solid #E8E8E8;
+  resize: none;
+  vertical-align: top;
+  outline: none;
+  padding: 10px;
+}
+.right form .explan span {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.right form .submit {
+  width: 109px;
+  height: 32px;
+  background-color: #29B572;
+  color: #FFF;
+  padding: 0;
+  border: none;
+  margin-top: 5px;
+  margin-left: 72px;
+}
+.right .access {
+  background-color: #FFFFFF;
+}
+.right .access span {
+  display: inline-block;
+  width: 12px;
+  height: 30px;
+  vertical-align: middle;
+  background: url(../img/public/15ico_bg.png) no-repeat;
+  background-position: -2px -974px;
+  margin-left: 5px;
+}
+.right .access .star {
+  background-position: -2px -996px;
+}
+.right .access #summary {
+  height: auto;
+}
+.right .access #summary label {
+  float: left;
+  display: inline;
+  height: 16px;
+  line-height: 1;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+.right .access #summary ul {
+  float: left;
+  display: inline;
+  width: 570px;
+  padding: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #E0E0E0;
+}
+.right .access #summary ul li {
+  float: left;
+  padding: 5px;
+  line-height: 1;
+  border: 1px solid #29B572;
+  color: #29B572;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.right .access #summary ul .active1 {
+  border: 1px solid #29B572;
+  color: #FFFFFF;
+  background: #29B572;
+  margin-right: 100px;
+}
+.right .access #summary ul .last {
+  margin-right: 4px;
+}
+.right .access #summary ul .active2 {
+  border: 1px solid #c2c2c2;
+  color: #FFFFFF;
+  background: #c2c2c2;
+}
+.right .access #summary ul .active3 {
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  background: #999999;
+  margin-right: 0;
+}
+.right .access .explan span {
+  width: auto;
+  height: auto;
+  background: none;
+}
+/*# sourceMappingURL=myOrder.css.map */

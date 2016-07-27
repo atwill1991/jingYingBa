@@ -223,3 +223,35 @@
 .Coursedetail .right ul li:hover dt,.Content .right ul li:hover dt {
   color: #29b572;
 }
+
+
+.access .personal_impression{
+	margin:55px 0;
+}
+.access .personal_impression dt{
+	color:#999999;
+	float: left;
+	display: inline;
+	margin-right: 5px;
+}
+.access .personal_impression dd{
+	float: left;
+	display: inline;
+	float:left;
+	width:790px;
+}
+.access .personal_impression dd span{
+	display: inline-block;
+	padding:5px;
+	color:#29B572;
+	border:1px solid #29B572;
+	line-height: 1;
+	float: left;
+	margin-right: 10px;
+	margin-bottom:15px;
+}
+.access .personal_impression dd .active1{
+	color:#FFFFFF;
+	background-color:#C2C2C2;
+	border:1px solid #C2C2C2;
+}
