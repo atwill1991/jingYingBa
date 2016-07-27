@@ -33,16 +33,18 @@ $(".btn").on("click",function(){
 });
 //删除订单
 $(".del a").on("click",function(){
-	if(confirm("你确定要删除吗?")){	
+
 		$(".select").each(function(index,item){
 			console.log(this.className);
 			if(this.className=="select selected"){
+				if(confirm("你确定要删除吗?")){	
 					$(item).parent().slideUp(function(){
 						$(item).parent().remove();				
 					});
+				}
 			}
 		});
-	}
+	
 });
 
 //选项框中勾选状态切换

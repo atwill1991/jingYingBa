@@ -86,7 +86,7 @@ ul.city-list-wrap{
 	width: 78px;
 	text-align: center;
 }
-.middle{
+.city-list-wrap>li:nth-child(3n+2){
 	margin:0 30px;
 }
 .grayActive{
@@ -153,7 +153,7 @@ ul.action-list-wrap{
 	background-color: #fff;
 	border-bottom: 1px solid #e8e8e8; 
 }
-.footer{
+footer{
 	width: 1228px;
 	margin:0 auto;
 }
@@ -223,7 +223,7 @@ address{
 	padding-top:18px;
 	padding-bottom: 38px;
 	text-align: center;
-	
+	background-color: #fff;
 }
 address>a{
 	color: #808083;
