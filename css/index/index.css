@@ -211,20 +211,20 @@ ul.menu-wrap{
 	border-left: 1px solid #e8e8e8;
 	margin-top:10px;
 }
-.menu-wrap>li:nth-child(1) div.left{
+.menu-wrap>.one div.left{
 	background-position: 20px 1px;
 	border-left: none;
 }
-.menu-wrap>li:nth-child(2) div.left{
+.menu-wrap>.two div.left{
 	background-position: 20px -67px;
 }
-.menu-wrap>li:nth-child(3) div.left{
+.menu-wrap>.third div.left{
 	background-position: 20px -135px;
 }
-.menu-wrap>li:nth-child(4) div.left{
+.menu-wrap>.four div.left{
 	background-position: 20px -203px;
 }
-.menu-wrap>li:nth-child(5) div.left{
+.menu-wrap>.five div.left{
 	background-position: 20px -271px;
 }
 .menu-wrap a>div.right{
