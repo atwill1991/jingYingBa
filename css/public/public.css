@@ -242,6 +242,7 @@ address>a:last-child:hover{
 /*******************最底部的信息 end *******************/
 /******************用户登录后的头部的样式 begin ：*********************/
 .logo2-wrap{
+	position: relative;
 	height: 44px;
 	line-height: 44px;
 }
@@ -256,6 +257,7 @@ address>a:last-child:hover{
 	font-size: 1.4rem;
 	color: #999;
 }
+/*<!-- 个人中心: -->*/
 .login2-wrap{
 	position: relative;
 }
@@ -271,5 +273,35 @@ address>a:last-child:hover{
 	/*border: 1px solid red;*/
 	background: url(../../img/index/more-icon-bg.png) no-repeat;
 	background-position: 1px -396px;
+}
+.login2-wrap:hover .each-center-wrap{
+	display: block;
+}
+.login2-wrap>a.each-center-title{
+	color: #333;
+}
+ul.each-center-wrap{
+	position: absolute;
+	left: 16px;
+	top: 70px;
+	width: 88px;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	background-color: #fff;
+	display: none;
+}
+.each-center-wrap>li{
+	border-bottom: 1px solid #ddd;
+}
+.each-center-wrap>li:hover{
+	background-color: #f5f5f5;
+}
+.each-center-wrap>li>a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #333;
+	font-size: 1.2rem;
 }
 /******************用户登录后的头部的样式 end *********************/
