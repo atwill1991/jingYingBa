@@ -537,10 +537,9 @@ ul.each-info-list{
 	position: absolute;
 	top: -30px;
 	right: 80px;
-	width: 150px;
-	height: 150px;
-	background: url(../../img/index/code-2d.png) no-repeat;
-	background-size: 100% 100%;
+	width: 182px;
+	height: 172px;
+	background: url(../../img/index/code-2d-2.png) no-repeat;
 	z-index: 10;
 }
 .wx-btn:hover:after{

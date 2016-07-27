@@ -17,6 +17,7 @@ function getCoureseData(n){
 		dataType:"json",
 		success:function(data){
 			//第一页先显示20条填充第一页
+			alert("ok")
 			CourseData=data;
 			$(".totalCorse").html("共"+data.length+"条");
 			fillData(1,data);
@@ -70,7 +71,7 @@ $(".subject a").on("click",function(){
  	
 	for(var i=(n-1)*20;i<len;i++){
 		$(".course_detail").get(0).innerHTML+='<li>'+
-			'<a href="javascript:void(0)">'+
+			'<a href="./CourseDetail/Course.html?'+data[i].id+'">'+
 				'<img src="'+data[i].imgsrc+'" alt="" />'+
 				'<dl>'+
 					'<dt>'+data[i].title+'</dt>'+
