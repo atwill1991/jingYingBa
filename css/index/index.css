@@ -114,14 +114,14 @@ ul.item-wrap{
 	padding-bottom: 12px;
 }
 .item-wrap>li:first-child{
-	font-size: 1.4rem;
+	font-size: 14px;
 	margin-bottom: 8px;
 }
-.item-wrap>li:first-child>a:last-child{
-	font-size: 1.2rem;
+.item-wrap>li:first-child>.last{
+	font-size: 12px;
 	float: right;
 }
-.item-wrap>li:first-child>a:last-child:hover{
+.item-wrap>li:first-child>.last:hover{
 	color:#33b574;
 }
 .item-wrap>li{

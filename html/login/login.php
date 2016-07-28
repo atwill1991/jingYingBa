@@ -43,7 +43,7 @@
 				<ul class="info-wrap">
 				<!-- 登录： -->
 					<li class="info-login">
-						<form action="">
+						<form action="../PersonalCenter/PersonalCenter.html">
 							<label class="login-phone-wrap label-public">
 								<input type="text" class="login-phone login" placeholder="请输入手机号"> 
 							</label>
