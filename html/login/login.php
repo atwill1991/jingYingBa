@@ -109,7 +109,6 @@
 							<label class="create-submit-wrap">
 								<input type="button" value="提交" class="create-submit-btn"> 
 							</label>
-							
 						</form> 
 					</li>
 				</ul>
@@ -270,7 +269,7 @@
 								success:function(data){
 									console.log(data);
 									if(data.msg=="1"){
-										location.href="../../index.html";
+										location.href="../../html/PersonalCenter/PersonalCenter.html";
 										console.log("成功");
 									}else if(data.msg==2){
 										alert("用户名和密码不匹配");
@@ -301,6 +300,44 @@
 					createFlag=true;
 				}
 			})
+			 // 随机数：
+			 function rand(min,max){
+			 	return parseInt(Math.random()*(max-min)+min);
+			 }
+			 // 模拟手机发送的验证码：
+			function strNumb(min,max){
+				var arrNumb=[];
+				for(var m=0;m<4;m++){
+					arrNumb.push(rand(min,max));
+				}
+				if(m==4){
+					return arrNumb.join("");
+				}
+			}
+			var strNum=strNumb(0,10);
+			$(".get-phone-code").on("click",function(){
+				$(".create-phone").trigger("blur");//事件模拟
+				if(createFlag){
+					strNum=strNumb(0,10);
+					alert(strNum);
+				}
+			})
+			$(".create-code").on("blur",function(){
+				var txt=$(".create-code").val().trim();
+				if(txt==strNum){
+					$(".create-code-error").hide();
+					createFlag=true;
+				}else if(txt=""){
+					$(".create-code-error").text("验证码不能为空");
+					$(".create-code-error").show();
+					createFlag=false;
+				}else{
+					$(".create-code-error").text("验证码不正确");
+					$(".create-code-error").show();
+					createFlag=false;
+				}
+			})
+			// 第二次输入的密码和第一次密码的比较的事件：
 			$(".create-pwd2").on("blur",function(){
 				var txt1=$(".create-pwd1").val();
 				var txt2=$(".create-pwd2").val();
@@ -312,9 +349,6 @@
 					$(".create-pwd2-error").show();
 					createFlag=false;
 				}
-			})
-			$(".get-phone-code").on("click",function(){
-				$(".create-phone").trigger("blur");//事件模拟
 			})
 			$(".create-agree-item>span").on("click",function(){
 				$(".create-agree-item>input").trigger("click");//事件模拟,模拟input选择框
@@ -335,6 +369,7 @@
 						$(".info-create p").eq(index).hide();
 						$(".create-phone").trigger("blur");//事件模拟
 						$(".create-pwd2").trigger("blur");//事件模拟
+						$(".create-code").trigger(("blur"));//事件模拟
 						if(i==3&&createFlag){
 							// 发起一个ajax请求：
 							$.ajax({
@@ -362,8 +397,6 @@
 					}
 				})
 			})
-
-
 
 			// 提交成功后的弹窗的事件：
 			$(".close-submit-btn").on("click",function(){
