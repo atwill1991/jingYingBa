@@ -13,7 +13,7 @@
 <body>
 	<!-- 头部的导航区域：-->
 	<div class="header-wrap">
-		<header class="header-inner clearfix">
+		<div class="header-inner clearfix">
 			<!-- 图标logo： -->
 			<div class="logo-wrap">
 				<a href="../../index.html" class="logo-icon"><img src="../../img/public/logo-icon.png"></a>
@@ -31,7 +31,7 @@
 					<a href="javascript:void(0)"><span class="add-icon"></span>&nbsp;提问</a>
 				</li>
 			</ul>
-		</header>
+		</div>
 	</div>
 	<div class="content-wrap">
 		<div class="content-inner">
