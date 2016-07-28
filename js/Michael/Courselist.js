@@ -67,10 +67,9 @@ $(".subject a").on("click",function(){
  	}else{
  		len=(n-1)*20+(data.length%20);
  	}
- 	
 	for(var i=(n-1)*20;i<len;i++){
 		$(".course_detail").get(0).innerHTML+='<li>'+
-			'<a href="javascript:void(0)">'+
+			'<a href="./CourseDetail/Course.html?'+data[i].id+'">'+
 				'<img src="'+data[i].imgsrc+'" alt="" />'+
 				'<dl>'+
 					'<dt>'+data[i].title+'</dt>'+
@@ -97,7 +96,6 @@ for(var i=0;i<CourseData.length;i++){
 	}
   return obj
 }
-
 			//生成对应页码
 			function createPage(data){
 				var len=Math.ceil(data.length/20);//总共页数

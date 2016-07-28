@@ -32,7 +32,7 @@
   background-color: #CCCCCC;
   float: left;
 }
-.CoureseBanner .left .picBox img:last-child {
+.CoureseBanner .left .picBox .last {
   margin-right: 0;
 }
 .CoureseBanner .right {
@@ -333,7 +333,7 @@
 .Coursedetail .left .access .accessDetail .left .star .active {
   background-position: 0 -1002px;
 }
-.Coursedetail .left .access .accessDetail .left .star label:last-child {
+.Coursedetail .left .access .accessDetail .left .star .last {
   margin-right: 60px;
 }
 .Coursedetail .left .access .accessDetail .left p {
@@ -496,10 +496,13 @@
 	top:0;
 	left:0;
 	background-color:rgba(0,0,0,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);    /*IE8支持*/	
 	width:100%;
 	height:100%;
-  display: none;
+ 	 display: none;
+ 	 z-index: 5;
 }
+
 .mask form{
 	position:absolute;
 	width: 486px;
@@ -602,10 +605,10 @@
 	border:none;
 	cursor: pointer;
 }
-.mask .btnList:last-child{
+.mask .last{
 	text-align: center;
 }
-.mask .btnList:last-child a,.btnList:last-child .submit{
+.mask .last a,.last .submit{
 	display: inline-block;
 	float: none;
 }
