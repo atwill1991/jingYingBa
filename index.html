@@ -489,10 +489,10 @@
 			})
 			// 返回顶部的事件：
 			// 设置$(".go-top-wrap")的位置：
-			$(".go-top-wrap").css("left",$(window).width()/2+$("footer").width()/2+20);
+			$(".go-top-wrap").css("left",$(window).width()/2+$(".footer-inner").width()/2+20);
 			// 改变屏幕大小时触发：
 			$(window).resize(function(){
-				$(".go-top-wrap").css("left",$(window).width()/2+$("footer").width()/2+20);
+				$(".go-top-wrap").css("left",$(window).width()/2+$(".footer-inner").width()/2+20);
 			})
 			// 点击返回顶部：
 			$(".gotop-btn").on("click",function(){
