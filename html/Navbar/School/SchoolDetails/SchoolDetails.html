@@ -11,7 +11,7 @@
 	<body>
 	<!-- 头部的导航区域：-->
 	<div class="header-wrap">
-		<header class="header-inner clearfix">
+		<div class="header-inner clearfix">
 			<!-- 图标logo： -->
 			<div class="logo-wrap">
 				<a href="javascript:void(0)" class="logo-icon"><img src="../../../../img/public/logo-icon.png"></a>
@@ -27,7 +27,7 @@
 							<em>北京</em>
 						</a>
 					</li>
-					<li>
+					<li class="middle">
 						<a href="javascript:void(0)">
 							<img src="../../../../img/index/city2.png" alt="">
 							<em>大连</em>
@@ -45,7 +45,7 @@
 							<em>上海</em>
 						</a>
 					</li>
-					<li>
+					<li class="middle">
 						<a href="javascript:void(0)">
 							<img src="../../../../img/index/city5.png" alt="">
 							<em>广州</em>
@@ -68,16 +68,16 @@
 			<!-- 功能按键： -->
 			<ul class="action-list-wrap clearfix">
 				<li>
-					<a href="index.html" class="clickActiveColor">首页</a>
+					<a href="../../../../index.html" class="clickActiveColor">首页</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">线下课程</a>
+					<a href="../../Courselist/Courselist.html">线下课程</a>
 				</li>
 				<li>
 					<a href="html/course-list/course-list.html">在线课程</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">学校</a>
+					<a href="../School.html">学校</a>
 				</li>
 				<li>
 					<a href="javascript:void(0)">互联网头条</a>
@@ -92,7 +92,7 @@
 				<span>&#124;</span>
 				<a href="html/login/login.html">注册</a>
 			</p>
-		</header>
+		</div>
 	</div>			
 	<!--中间内容部分-->
 	<div class="wrap">
@@ -129,10 +129,10 @@
 							<li>官方相册</li>
 							<li>用户评价</li>
 						</ul>
-						<!--本校课程-->
+						<!--本校课程问题所在-->
 						<ul class="details">
 							<li>
-								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span>线上</span><em class="free">免费</em></a>
+								<a href="#">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span>线上</span><em class="free">免费</em></a>
 								<p class="clearfix">
 									<span class="name">蓝欧科技教育有限公司</span>
 									<span class="day">120天</span>
@@ -143,7 +143,7 @@
 							</li>
 							<!--重复部分-->
 							<li>
-								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span class="offline">线下</span><em class=""><i class="free">&yen;</i>1288</em></a>
+								<a href="#">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span class="offline">线下</span><em class=""><i class="free">&yen;</i>1288</em></a>
 								<p class="clearfix">
 									<span class="name">蓝欧科技教育有限公司</span>
 									<span class="day">120天</span>
@@ -153,7 +153,7 @@
 								</p>
 							</li>	
 							<li>
-								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span>线上</span><em class=""><i class="free">&yen;</i>1288</em></em></a>
+								<a href="#">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span>线上</span><em class=""><i class="free">&yen;</i>1288</em></em></a>
 								<p class="clearfix">
 									<span class="name">蓝欧科技教育有限公司</span>
 									<span class="day">120天</span>
@@ -163,7 +163,7 @@
 								</p>
 							</li>
 							<li>
-								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span class="offline" >线下</span><em class=""><i class="free">&yen;</i>1288</em></em></a>
+								<a href="#">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span class="offline" >线下</span><em class=""><i class="free">&yen;</i>1288</em></em></a>
 								<p class="clearfix">
 									<span class="name">蓝欧科技教育有限公司</span>
 									<span class="day">120天</span>
@@ -173,7 +173,7 @@
 								</p>
 							</li>
 							<li>
-								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span>线上</span><em class=""><i class="free">&yen;</i>1288</em></em></a>
+								<a href="#">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校<span>线上</span><em class=""><i class="free">&yen;</i>1288</em></em></a>
 								<p class="clearfix">
 									<span class="name">蓝欧科技教育有限公司</span>
 									<span class="day">120天</span>
@@ -184,27 +184,28 @@
 							</li>
 							<!--重复部分结束-->
 						</ul>
+						<!-- IE8下没问题************* -->
 						<!--学校简介-->
-						<article class="introduct">
+						<div class="article introduct">
 							<h3>蓝鸥科技教育有限公司简介</h3>
 							<p>蓝鸥是一家集产、学、研为一体的综合性移动互联网研发培训机构，致力于iOS开发、Unity3D游戏开发、Android开发和HTML5前端开发等软件人才的培养。蓝鸥强大的师资阵容，纯净的教育理念，严格的管理制度，使其成为了美国苹果公司AATC认证官方授权培训中心、Unity官方授权培训中心，也是目前国内仅有的一家”两大官方授权于一身“的移动互联网培训企业。2012年10月18日，刘辉、李静波、崔亚允，中国移动互联网开发行业的三位领军人物，强强联手，倾力打造了蓝鸥。“三巨头”（开发、技术、教学）护航蓝鸥一路向前，经过短短的三年，蓝鸥已拥有在职员工400多人，学员上万人，在全国共拥有8家实训中心、2家中心直属分院和1家项目研发基地，分别是：北京实训中心、上海实训中心、广州实训中心、大连实训中心、郑州实训中心、西安实训中心、武汉实训中心、成都实训中心、北京中心直属分院（石家庄）、大连中心直属分院（哈尔滨）和上海项目研发基地。</p>
 							<p>蓝鸥是一家集产、学、研为一体的综合性移动互联网研发培训机构，致力于iOS开发、Unity3D游戏开发、Android开发和HTML5前端开发等软件人才的培养。蓝鸥强大的师资阵容，纯净的教育理念，严格的管理制度，使其成为了美国苹果公司AATC认证官方授权培训中心、Unity官方授权培训中心，也是目前国内仅有的一家”两大官方授权于一身“的移动互联网培训企业。2012年10月18日，刘辉、李静波、崔亚允，中国移动互联网开发行业的三位领军人物，强强联手，倾力打造了蓝鸥。“三巨头”（开发、技术、教学）护航蓝鸥一路向前，经过中国移动互联网开发行业的三位领军人物，强强联手，倾力打造了蓝鸥。</p>
-						</article>
+						</div>
 						<!--学校相册-->
-						<figure class="clearfix">
+						<div class="figure clearfix">
 							<img src="../../../../img/coures.png" alt="" />
 							<img src="../../../../img/coures.png" alt="" />
 							<img src="../../../../img/coures.png" alt="" />
+							<img src="../../../../img/coures.png" alt="" class="last" />
 							<img src="../../../../img/coures.png" alt="" />
 							<img src="../../../../img/coures.png" alt="" />
 							<img src="../../../../img/coures.png" alt="" />
-							<img src="../../../../img/coures.png" alt="" />
-							<img src="../../../../img/coures.png" alt="" />	
-							<img src="../../../../img/coures.png" alt="" />
+							<img src="../../../../img/coures.png" alt="" class="last"/>	
 							<img src="../../../../img/coures.png" alt="" />
 							<img src="../../../../img/coures.png" alt="" />
-							<img src="../../../../img/coures.png" alt="" />							
-						</figure>
+							<img src="../../../../img/coures.png" alt="" />
+							<img src="../../../../img/coures.png" alt="" class="last"/>							
+						</div>
 						<!--学校评价-->
 						<div class="access tab">
 							<div class="accessDetail clearfix">
@@ -215,7 +216,7 @@
 								<label class="active"></label>
 								<label class="active"></label>
 								<label class="active"></label>
-								<label></label>
+								<label class="last"></label>
 							</div>
 							<p>该课程供2人评论</p>
 						</div>
@@ -282,6 +283,7 @@
 				</div>						
 					</div>
 				</div>
+				<!-- IE8下没问题 -->
 				<div class="right clearfix">
 					<div class="address">
 						<h3>学校地址</h3>

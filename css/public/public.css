@@ -86,7 +86,7 @@ ul.city-list-wrap{
 	width: 78px;
 	text-align: center;
 }
-.middle{
+.middle,.between{
 	margin:0 30px;
 }
 .grayActive{

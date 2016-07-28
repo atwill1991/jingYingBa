@@ -226,11 +226,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.school_list .right ul li a dl dd:last-child {
+.school_list .right ul li a dl .last {
   font-size: 16px;
   color: #ea9b65;
 }
-.school_list .right ul li a dl dd:last-child em {
+.school_list .right ul li a dl .last em {
   font-size: 12px;
 }
 .school_list .right ul li:hover {

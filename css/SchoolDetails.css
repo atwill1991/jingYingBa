@@ -249,33 +249,33 @@
 .right .wrap ul li .{
 	background-position:-2px -720px;
 }
-article{
+.article{
 	padding:0 30px; 
 	color:#333333;
 	display: none;
 }
-article h3{
+.article h3{
 	font-size: 16px;
 	margin: 30px 0;
 	text-align: center;
 }
-article p{
+.article p{
 	font-size:14px;
 	text-indent: 28px;
 	line-height:34px;
 	margin-bottom: 8px;
 }
-figure{
+.figure{
 	display: none;
 	margin-top: 25px;
 	margin:25px 30px 0;
 }
-figure img{
+.figure img{
 	width:196px;
 	margin-right: 20px;
 	margin-bottom:20px
 }
-figure img:nth-child(4n){
+.figure .last{
 	margin-right: 0;
 }
 
