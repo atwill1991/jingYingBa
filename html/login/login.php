@@ -25,10 +25,10 @@
 					<a href="javascript:void(0)">课程</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)">互联网头条</a>
+					<a href="../Navbar/new/new.html">互联网头条</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)"><span class="add-icon"></span>&nbsp;提问</a>
+					<a href="../Navbar/question/question.html"><span class="add-icon"></span>&nbsp;提问</a>
 				</li>
 			</ul>
 		</div>

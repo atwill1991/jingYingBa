@@ -1,6 +1,9 @@
 body{
 	background-color: #f5f5f5;
 }
+address{
+	background-color: #FFF;
+}
 .section{
 	margin: 0 auto;
 	margin-top: 30px;
@@ -262,7 +265,7 @@ body{
 .coupon_min{
 	float: left;
 	text-align: center;
-	width: 430px;
+	width: 435px;
 	height: 196px;
 	
 }
@@ -282,13 +285,18 @@ body{
 	font-size: 50px;
 }
 .coupon_min h3{
-	width: 100%;
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-size: 18px;
+	height: 75px;
+	line-height: 75px;
+}
+.coupon_minP{
+	height: 18px;
+	line-height: 18px;
 }
 .coupon_timer{
-	width: 430px;
+	width: 435px;
 	height: 30px;
 	line-height: 30px;
 	color: #fff;
