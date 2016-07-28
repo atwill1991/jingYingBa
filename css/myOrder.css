@@ -81,14 +81,14 @@ html {
 .Content .right .mylist .titleList .del a:hover {
   color: #29B572;
 }
-.Content .right .mylist .header2 {
+.Content .right .mylist header {
   width: 979px;
   height: 40px;
   background-color: #fafafa;
   border: 1px solid #E8E8E8;
   margin: 0 auto;
 }
-.Content .right .mylist .header2 ul li {
+.Content .right .mylist header ul li {
   float: left;
   height: 40px;
   line-height: 40px;
@@ -96,26 +96,26 @@ html {
   font-size: 14px;
   color: #666666;
 }
-.Content .right .mylist .header2 ul .all {
+.Content .right .mylist header ul .all {
   width: 80px;
 }
-.Content .right .mylist .header2 ul .orderInfo {
+.Content .right .mylist header ul .orderInfo {
   width: 352px;
 }
-.Content .right .mylist .header2 ul .orderTime {
+.Content .right .mylist header ul .orderTime {
   width: 152px;
 }
-.Content .right .mylist .header2 ul .quantity {
+.Content .right .mylist header ul .quantity {
   width: 40px;
 }
-.Content .right .mylist .header2 ul .amount {
+.Content .right .mylist header ul .amount {
   width: 94px;
   text-align: right;
 }
-.Content .right .mylist .header2 ul .status {
+.Content .right .mylist header ul .status {
   width: 170px;
 }
-.Content .right .mylist .header2 ul li:last-child {
+.Content .right .mylist header ul li:last-child {
   width: 48px;
 }
 .Content .right .mylist .listContent {

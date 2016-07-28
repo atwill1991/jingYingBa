@@ -6,19 +6,3 @@ $(".nav li").on("click",function(){
 	$(".bar").show();
 	tab.show();
 })
-$(".mask").on("click",function(){
-	$(this).hide();
-});
-$(".mask form").on("click",function(e){
-	e.stopPropagation();
-});
-$(".alert").on("click",function(){
-	$(".mask").show();
-});
-$(".close").on("click",function(e){
-	e.stopPropagation();
-	$(".mask").hide();
-});
-$(".cancel").on("click",function(e){
-	$(".close").click();
-});
