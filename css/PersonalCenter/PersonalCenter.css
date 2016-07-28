@@ -285,12 +285,15 @@ body{
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-size: 18px;
+<<<<<<< Updated upstream
 	height: 75px;
 	line-height: 75px;
 }
 .coupon_minP{
 	height: 18px;
 	line-height: 18px;
+=======
+>>>>>>> Stashed changes
 }
 .coupon_timer{
 	width: 435px;

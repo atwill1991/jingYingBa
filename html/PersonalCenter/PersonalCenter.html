@@ -49,7 +49,6 @@
 				</div>
 				<h3>速度决定一切</h3>
 				<a href="">修改</a>
-				
 			</div>
 			<div class="nav_right">
 				<h3>学习情况</h3>
@@ -105,11 +104,18 @@
 						<p class="center_header">
 							<a href="javascript:void(0);" class="active_2">IOS课程</a>
 							<a href="javascript:void(0);">Android课程</a>
-						</p>	
-						<div id="canvas" style="width: 995px; height: 555px;">		
-						</div>
+						</p>
+						<!-- <div class="center_boHeader"> -->
+							<div id="canvas" style="width: 995px; height: 555px; display: none;">		
+							</div>
+						<!-- </div>	 -->
+							<div style="width: 995px;height: 555px;">
+								<p>未来这里是记录你学习曲线的地方</p>
+								<p>将包含你的学习分数，学习时间等状态，<a href="">挑选一门课程</a>，开始学习吧</p>
+							</div>
+						
 					</div>
-					<div class="center_bottom">
+					<div class="center_bottom" style="display: none;">
 						<p class="center_header">
 							<a href="javascript:void(0);" class="active_2">IOS课程</a>
 							<a href="javascript:void(0);">Android课程</a>
@@ -158,7 +164,7 @@
 							<div>
 								<a href="javascript:void(0)">AutoCAD工程绘制基础入门与提高</a>
 								<p class="p_mark iconfont">&#xe761;当前分数：98分</p>
-								<p class="p_timer" >未完成</p>
+								<p class="p_timer">未完成</p>
 
 							</div>
 							<div>
@@ -318,7 +324,7 @@
 		 
 		$(".center_left li").on("click",function() {
 				var index = $(this).index();
-				console.log(index)
+				// console.log(index)
 				$(this).addClass("active").siblings().removeClass("active");
 				$(".center_right li").eq(index).css("display","block").siblings().css("display","none");
 
@@ -328,6 +334,9 @@
 		$(".center_header a").on("click",function(){
 			var index = $(this).index();
 			$(this).addClass("active_2").siblings().removeClass("active_2");
+			console.log(index)
+			$(".center_boHeader div").eq(index).css("display","block").siblings().css("display","none");
+
 		})
 		var myChart = echarts.init(document.getElementById('canvas'));
 		option = {
