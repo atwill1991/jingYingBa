@@ -9,6 +9,6 @@
 		echo "数据库连接失败";
 	}
 	// 2.选择数据库并且设置数据库的查询字符集；
-	mysql_select_db("jingyingba");
+	mysql_select_db("jingyinba");
 	mysql_query("set names utf8");
  ?>

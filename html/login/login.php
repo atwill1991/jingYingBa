@@ -376,8 +376,8 @@
 								type:"POST",
 								url:"create-user.php",
 								data:{
-									createPhone:$("input.create-phone").val(),
-									createPwd2:$("input.create-pwd2").val()
+									createPhone:$(".create-phone").val(),
+									createPwd2:$(".create-pwd2").val()
 								},
 								dataType:"json",
 								success:function(data){

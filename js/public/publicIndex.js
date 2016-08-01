@@ -54,14 +54,14 @@ $(function(){
 				lastELe.css("width","0");
 				lastELe.insertBefore(firstEle);
 				lastELe.stop().animate({
-					width:"150",
+					width:"150"
 				},200)
 			})
 			$(".left-controler").on("click",function(){
 				firstEle=$(".logo-icon-inner>li").eq(0);
 				lastELe=$(".logo-icon-inner>li").eq(len-1);
 				firstEle.stop().animate({
-					width:"0",
+					width:0
 				},200,function(){
 					firstEle.css("width","150");
 					firstEle.appendTo($(".logo-icon-inner"));
@@ -77,7 +77,7 @@ $(function(){
 			// 点击返回顶部：
 			$(".gotop-btn").on("click",function(){
 				$("html,body").animate({//加html兼容ie
-					"scrollTop":"0",
+					"scrollTop":0
 				},600)
 			})
 		})

@@ -11,7 +11,7 @@
 		exit();// 如果存在则，不执行之后的语句：
 	}
 	// 如果不存在则进行下一步操作：
-	$sql="INSERT INTO `jingyingba`.`user_name` (`id`, `username`, `password`, `phone`) VALUES (NULL, '', '$password', '$phone')";
+	$sql="INSERT INTO `jingyinba`.`user_name` (`id`, `username`, `password`, `phone`) VALUES (NULL, '', '$password', '$phone')";
 	// 3.执行sql语句：
 	mysql_query($sql);
 	if(mysql_affected_rows()>0){
